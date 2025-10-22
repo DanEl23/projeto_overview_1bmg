@@ -1,0 +1,6 @@
+pandas
+python-dateutil
+matplotlib
+seaborn
+python-pptx
+Pillow

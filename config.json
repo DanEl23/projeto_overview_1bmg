@@ -1,0 +1,840 @@
+{
+  "artistas": {
+    "elegante": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "feNoDiva": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "momentosDoFute": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "canalCidadaoBrasileiro": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "seLigaNaNoticia": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "revistaOeste": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "tvAparecida_Setembro": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "diima": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "santoFlow": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "vidaVerde": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "brunetCast": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "newCreationTV": {
+      "grupo_4_graficos": "gerar_graficos_ingles.py",
+      "grupo_5_apresentacao": ["apresentacao_report_ingles.py", "apresentacao_cluster_ingles.py"]
+    },
+    "jesusCopy": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "churchOfTheCity": {
+      "grupo_4_graficos": "gerar_graficos_ingles.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "rebecaKids": {
+      "tipo_processamento": "CA",
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "nickVujicic": {
+      "grupo_4_graficos": "gerar_graficos_ingles.py",
+      "grupo_5_apresentacao": ["apresentacao_report_ingles.py", "apresentacao_cluster_ingles.py"]
+    },
+    "jonBirolo": {
+      "tipo_processamento": "CA",
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "lagoinhaOne": {
+      "tipo_processamento": "CA",
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "casaDeDestino": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "3PalavrinhasBaby": {
+      "tipo_processamento": "CA",
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "felipeSilvattos": {
+      "tipo_processamento": "CA",
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "3LittleWordsBaby": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "smilinguido": {
+      "tipo_processamento": "CA",
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "aventurasDeTUC": {
+      "tipo_processamento": "CA",
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "gabrielaFigueiredo": {
+      "tipo_processamento": "CA",
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "lagoinhaMusic": {
+      "tipo_processamento": "CA",
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "cesarBelieny": {
+      "tipo_processamento": "CA",
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "cortesJesusCopy": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "josueBrandao": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "lagoinha": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "verdadeVida": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "3PalavrinhasReact": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "oficialIbab": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "tecGol": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "daystar": {
+      "grupo_4_graficos": "gerar_graficos_ingles.py",
+      "grupo_5_apresentacao": ["apresentacao_report_ingles.py", "apresentacao_cluster_ingles.py"]
+    },
+    "tiagoBrunet": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "isabellaGaspary": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "itaqueraChurch": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "anaEOsGamers": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "ICTV": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "atitudeTV": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "jazinho": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "regenere": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "cornelioAugusto": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "camilaBarros": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "hernandesDiasLopes": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "italoGoncalves": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "casaDeDeus": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "sergioFreitas": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "adventistaSudamerica": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "oitava": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "deusEAmor": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "deiveLeonardo": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "danielBrunet": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "cleitonPinheiro": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "lucianoManga": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "lucasBlumer": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "feliz7Kids": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "andreFernandes": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "klefersonOliveira": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "adAlpha": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "adventistaBrasil": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "edmeiaWilliams": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "gustavoTV": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "familyPlays": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "helenaTannure": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "IPB": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "familiaJesusCopy": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "joaoKepler": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "luzParaOCaminho": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "3PalavrinhasMiniExploradores": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "paschoalPiragine": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "rebecaNemer": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "queroAprender": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "flamarion": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "cassioCortes": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "realityXP": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "formulaIndy": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "biaFigueiredo": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "afterPodcast": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "litoCavalcanti": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "ulissesTV": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "adrenalinaPuraBR": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "filmelierLatam": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "imirante": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "adrenalinaPuraLatam": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "filmelierBR": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "bahiaNoticias": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "miranteFM": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "arivalDiasCasimiro": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "hermannGreb": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "miranteNews": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "assembleiaMG": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "itatiaiaEsporte": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "itatiaiaPatrulha": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "oTempoLivre": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "galoTV": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "itatiaia": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "itatiaiaPop": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "olharDigital": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "oTempo": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "tvACritica": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "ATLTV": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "oTempoSports": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "IGIPP": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "lance": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "radioSalvador": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "leoDiasTV": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "105FM": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "GZH": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "brasilParalelo": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "timesBrasil": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "tvGreen": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "inssPassoAPasso": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "inssSemSegredo": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "neoFeed": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "ronJones": {
+      "grupo_4_graficos": "gerar_graficos_ingles.py",
+      "grupo_5_apresentacao": ["apresentacao_report_ingles.py", "apresentacao_cluster_ingles.py"]
+    },
+    "firstBaptistDallas": {
+      "grupo_4_graficos": "gerar_graficos_ingles.py",
+      "grupo_5_apresentacao": ["apresentacao_report_ingles.py", "apresentacao_cluster_ingles.py"]
+    },
+    "lofiWork": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "programaFolego": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "rodrigoSilva": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "PIBCuritiba": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "cristaMundial": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "ADVEC": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "tvEncontroComCristo": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "talithaPereira": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "igrejaDoAmor": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "marceloRossi": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "3Palavrinhas": {
+      "tipo_processamento":"CA",
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "3LittleWords": {
+      "tipo_processamento":"CA",
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "tribunaDoLeste": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "laatus": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "tvAparecida": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "diarioDoTrabalhador": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "allAbout": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "sabeTodo": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "josephPrince": {
+      "grupo_4_graficos": "gerar_graficos_ingles.py",
+      "grupo_5_apresentacao": ["apresentacao_report_ingles.py", "apresentacao_cluster_ingles.py"]
+    },
+    "leoFigueiredo": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "ADSeara": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "cristianismoSemFronteiras": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "elizeteMalafaia": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "igrejaDaCidade": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "silasMalafaia": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "novosComecos": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "glauciaOliveira": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "profetaRonny": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "ensinandoSiao": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "authenticGames": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "oAntagonista": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "rasgandoOsCeus": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "somethingGood": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "eraUmaVez": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "popBola": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "emOFF": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "grandePremio": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "atuais": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "automotor": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "pbShorts": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "tvACritica copy": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "futshow": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "caoNutella": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "sagaWrestling": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "centralDaPalavra": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "alemDoGol": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "CNNEconomia": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "radioNovasdePaz": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "flavioGomes": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "ATLShorts": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "poderSalvacao": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "palavrasDeFe": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "sabeTudoMundo": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "futebolMais": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "deiveLeonardoEnglish": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "willsong": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "amoViverPraCristo": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "gospelTrends": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "sabeTudo": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "drPet": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "botecoF1": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "luizaPossi": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "grandePremioF1": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "lagoinhaBrasilia": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "apaixonadosPorEstrada": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "gospelHits": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "sagaSuccess": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "CNNEsportes": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "CNNPop": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "sagaSoccer": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "CNNViagemGastronomia": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "promessaBencao": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "embrulhaPraViagem": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "tenhoDireito": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "itatiaiaSaude": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "bolaNasCostas": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "itatiaiaGastro": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "grandePremio2": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "vidaDeFe": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "NOVASDEPAZ": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "sagaScreen": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "CNN": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "corinthians": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "carlosMaia": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "ivanMaia": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "donosDaBola": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py", "apresentacao_midias.py"]
+    },
+    "advogadoRoberto": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    },
+    "noAlvo": {
+      "grupo_4_graficos": "gerar_graficos.py",
+      "grupo_5_apresentacao": ["apresentacao_report.py", "apresentacao_cluster.py"]
+    }
+  }
+}

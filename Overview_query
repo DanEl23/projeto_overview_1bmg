@@ -1,0 +1,175 @@
+-- Inicia com a cláusula WITH para criar as tabelas temporárias (CTEs)
+WITH 
+-- CTE 1: Pivota as métricas de LIFETIME (período total) a partir da tabela 'channel_metric'
+lifetime_metrics_pivoted AS (
+    SELECT
+        channel_id,
+        -- Métricas de Taxa/Média (usando AVG)
+        AVG(CASE WHEN content_id = '3' THEN ctr ELSE NULL END) AS lifetime_avg_ctr_videos,
+        AVG(CASE WHEN content_id = '2' THEN ctr ELSE NULL END) AS lifetime_avg_ctr_shorts,
+        AVG(CASE WHEN content_id = '1' THEN ctr ELSE NULL END) AS lifetime_avg_ctr_live,
+        AVG(CASE WHEN content_id = '3' THEN rpm ELSE NULL END) AS lifetime_avg_rpm_videos,
+        AVG(CASE WHEN content_id = '2' THEN rpm ELSE NULL END) AS lifetime_avg_rpm_shorts,
+        AVG(CASE WHEN content_id = '1' THEN rpm ELSE NULL END) AS lifetime_avg_rpm_live,
+        AVG(CASE WHEN content_id = '3' THEN likes_dislikes_percent ELSE NULL END) AS lifetime_avg_likes_dislikes_percent_videos,
+        AVG(CASE WHEN content_id = '2' THEN likes_dislikes_percent ELSE NULL END) AS lifetime_avg_likes_dislikes_percent_shorts,
+        AVG(CASE WHEN content_id = '1' THEN likes_dislikes_percent ELSE NULL END) AS lifetime_avg_likes_dislikes_percent_live,
+        AVG(CASE WHEN content_id = '3' THEN average_view_duration ELSE NULL END) AS lifetime_avg_view_duration_videos,
+        AVG(CASE WHEN content_id = '2' THEN average_view_duration ELSE NULL END) AS lifetime_avg_view_duration_shorts,
+        AVG(CASE WHEN content_id = '1' THEN average_view_duration ELSE NULL END) AS lifetime_avg_view_duration_live,
+        AVG(CASE WHEN content_id = '3' THEN average_view_percent ELSE NULL END) AS lifetime_avg_view_percent_videos,
+        AVG(CASE WHEN content_id = '2' THEN average_view_percent ELSE NULL END) AS lifetime_avg_view_percent_shorts,
+        AVG(CASE WHEN content_id = '1' THEN average_view_percent ELSE NULL END) AS lifetime_avg_view_percent_live,
+        
+        -- Métricas Aditivas (usando SUM)
+        SUM(CASE WHEN content_id = '3' THEN impressions ELSE 0 END) AS lifetime_impressions_videos,
+        SUM(CASE WHEN content_id = '2' THEN impressions ELSE 0 END) AS lifetime_impressions_shorts,
+        SUM(CASE WHEN content_id = '1' THEN impressions ELSE 0 END) AS lifetime_impressions_live,
+        SUM(CASE WHEN content_id = '3' THEN views ELSE 0 END) AS lifetime_views_videos,
+        SUM(CASE WHEN content_id = '2' THEN views ELSE 0 END) AS lifetime_views_shorts,
+        SUM(CASE WHEN content_id = '1' THEN views ELSE 0 END) AS lifetime_views_live,
+        SUM(CASE WHEN content_id = '3' THEN estimated_revenue ELSE 0 END) AS lifetime_revenue_videos,
+        SUM(CASE WHEN content_id = '2' THEN estimated_revenue ELSE 0 END) AS lifetime_revenue_shorts,
+        SUM(CASE WHEN content_id = '1' THEN estimated_revenue ELSE 0 END) AS lifetime_revenue_live,
+        SUM(CASE WHEN content_id = '3' THEN comments ELSE 0 END) AS lifetime_comments_videos,
+        SUM(CASE WHEN content_id = '2' THEN comments ELSE 0 END) AS lifetime_comments_shorts,
+        SUM(CASE WHEN content_id = '1' THEN comments ELSE 0 END) AS lifetime_comments_live,
+        SUM(CASE WHEN content_id = '3' THEN published_count ELSE 0 END) AS lifetime_published_count_videos,
+        SUM(CASE WHEN content_id = '2' THEN published_count ELSE 0 END) AS lifetime_published_count_shorts,
+        SUM(CASE WHEN content_id = '1' THEN published_count ELSE 0 END) AS lifetime_published_count_live,
+        SUM(CASE WHEN content_id = '3' THEN likes ELSE 0 END) AS lifetime_likes_videos,
+        SUM(CASE WHEN content_id = '2' THEN likes ELSE 0 END) AS lifetime_likes_shorts,
+        SUM(CASE WHEN content_id = '1' THEN likes ELSE 0 END) AS lifetime_likes_live,
+        SUM(CASE WHEN content_id = '3' THEN shares ELSE 0 END) AS lifetime_shares_videos,
+        SUM(CASE WHEN content_id = '2' THEN shares ELSE 0 END) AS lifetime_shares_shorts,
+        SUM(CASE WHEN content_id = '1' THEN shares ELSE 0 END) AS lifetime_shares_live,
+        SUM(CASE WHEN content_id = '3' THEN watch_time ELSE 0 END) AS lifetime_watch_time_videos,
+        SUM(CASE WHEN content_id = '2' THEN watch_time ELSE 0 END) AS lifetime_watch_time_shorts,
+        SUM(CASE WHEN content_id = '1' THEN watch_time ELSE 0 END) AS lifetime_watch_time_live,
+
+        -- Métricas de Nível de Canal
+        MAX(subscribers) AS lifetime_subscribers_total,
+        SUM(subscribers_gained) AS lifetime_subscribers_gained_total,
+        SUM(subscribers_lost) AS lifetime_subscribers_lost_total,
+        SUM(ts_youtube_search) AS lifetime_ts_youtube_search,
+        SUM(ts_external) AS lifetime_ts_external,
+        SUM(ts_playlists) AS lifetime_ts_playlists,
+        SUM(ts_browse_features) AS lifetime_ts_browse_features,
+        SUM(ts_direct_unknown) AS lifetime_ts_direct_unknown,
+        SUM(ts_other_youtube_features) AS lifetime_ts_other_youtube_features,
+        SUM(ts_sound_pages) AS lifetime_ts_sound_pages,
+        SUM(ts_end_screens) AS lifetime_ts_end_screens,
+        SUM(ts_channel_pages) AS lifetime_ts_channel_pages,
+        SUM(ts_suggested_videos) AS lifetime_ts_suggested_videos,
+        SUM(ts_notifications) AS lifetime_ts_notifications,
+        SUM(ts_shorts_feed) AS lifetime_ts_shorts_feed,
+        SUM(ts_videocards_notations) AS lifetime_ts_videocards_notations,
+        SUM(ts_hashtag_pages) AS lifetime_ts_hashtag_pages,
+        SUM(ts_remixed_video) AS lifetime_ts_remixed_video,
+        SUM(ts_related_shorts) AS lifetime_ts_related_shorts,
+        SUM(ts_real_time_redirection) AS lifetime_ts_real_time_redirection,
+        SUM(ts_live_vertical_feed) AS lifetime_ts_live_vertical_feed,
+        SUM(ts_youtube_advertising) AS lifetime_ts_youtube_advertising
+
+    FROM wordpress.channel_metric
+    GROUP BY channel_id
+),
+
+-- CTE 2: Pivota as métricas MENSAIS a partir da tabela 'channel_monthly_metric'
+monthly_metrics_pivoted AS (
+    SELECT
+        channel_id,
+        DATE_FORMAT(date, '%Y-%m-01') AS month_key, -- <-- ALTERAÇÃO AQUI
+        -- Métricas de Taxa/Média (usando AVG)
+        AVG(CASE WHEN content_id = '3' THEN ctr ELSE NULL END) AS monthly_avg_ctr_videos,
+        AVG(CASE WHEN content_id = '2' THEN ctr ELSE NULL END) AS monthly_avg_ctr_shorts,
+        AVG(CASE WHEN content_id = '1' THEN ctr ELSE NULL END) AS monthly_avg_ctr_live,
+        AVG(CASE WHEN content_id = '3' THEN rpm ELSE NULL END) AS monthly_avg_rpm_videos,
+        AVG(CASE WHEN content_id = '2' THEN rpm ELSE NULL END) AS monthly_avg_rpm_shorts,
+        AVG(CASE WHEN content_id = '1' THEN rpm ELSE NULL END) AS monthly_avg_rpm_live,
+        AVG(CASE WHEN content_id = '3' THEN likes_dislikes_percent ELSE NULL END) AS monthly_avg_likes_dislikes_percent_videos,
+        AVG(CASE WHEN content_id = '2' THEN likes_dislikes_percent ELSE NULL END) AS monthly_avg_likes_dislikes_percent_shorts,
+        AVG(CASE WHEN content_id = '1' THEN likes_dislikes_percent ELSE NULL END) AS monthly_avg_likes_dislikes_percent_live,
+        AVG(CASE WHEN content_id = '3' THEN average_view_duration ELSE NULL END) AS monthly_avg_view_duration_videos,
+        AVG(CASE WHEN content_id = '2' THEN average_view_duration ELSE NULL END) AS monthly_avg_view_duration_shorts,
+        AVG(CASE WHEN content_id = '1' THEN average_view_duration ELSE NULL END) AS monthly_avg_view_duration_live,
+        AVG(CASE WHEN content_id = '3' THEN average_view_percent ELSE NULL END) AS monthly_avg_view_percent_videos,
+        AVG(CASE WHEN content_id = '2' THEN average_view_percent ELSE NULL END) AS monthly_avg_view_percent_shorts,
+        AVG(CASE WHEN content_id = '1' THEN average_view_percent ELSE NULL END) AS monthly_avg_view_percent_live,
+        
+        -- Métricas Aditivas (usando SUM)
+        SUM(CASE WHEN content_id = '3' THEN impressions ELSE 0 END) AS monthly_impressions_videos,
+        SUM(CASE WHEN content_id = '2' THEN impressions ELSE 0 END) AS monthly_impressions_shorts,
+        SUM(CASE WHEN content_id = '1' THEN impressions ELSE 0 END) AS monthly_impressions_live,
+        SUM(CASE WHEN content_id = '3' THEN views ELSE 0 END) AS monthly_views_videos,
+        SUM(CASE WHEN content_id = '2' THEN views ELSE 0 END) AS monthly_views_shorts,
+        SUM(CASE WHEN content_id = '1' THEN views ELSE 0 END) AS monthly_views_live,
+        SUM(CASE WHEN content_id = '3' THEN estimated_revenue ELSE 0 END) AS monthly_revenue_videos,
+        SUM(CASE WHEN content_id = '2' THEN estimated_revenue ELSE 0 END) AS monthly_revenue_shorts,
+        SUM(CASE WHEN content_id = '1' THEN estimated_revenue ELSE 0 END) AS monthly_revenue_live,
+        SUM(CASE WHEN content_id = '3' THEN comments ELSE 0 END) AS monthly_comments_videos,
+        SUM(CASE WHEN content_id = '2' THEN comments ELSE 0 END) AS monthly_comments_shorts,
+        SUM(CASE WHEN content_id = '1' THEN comments ELSE 0 END) AS monthly_comments_live,
+        SUM(CASE WHEN content_id = '3' THEN published_count ELSE 0 END) AS monthly_published_count_videos,
+        SUM(CASE WHEN content_id = '2' THEN published_count ELSE 0 END) AS monthly_published_count_shorts,
+        SUM(CASE WHEN content_id = '1' THEN published_count ELSE 0 END) AS monthly_published_count_live,
+        SUM(CASE WHEN content_id = '3' THEN likes ELSE 0 END) AS monthly_likes_videos,
+        SUM(CASE WHEN content_id = '2' THEN likes ELSE 0 END) AS monthly_likes_shorts,
+        SUM(CASE WHEN content_id = '1' THEN likes ELSE 0 END) AS monthly_likes_live,
+        SUM(CASE WHEN content_id = '3' THEN shares ELSE 0 END) AS monthly_shares_videos,
+        SUM(CASE WHEN content_id = '2' THEN shares ELSE 0 END) AS monthly_shares_shorts,
+        SUM(CASE WHEN content_id = '1' THEN shares ELSE 0 END) AS monthly_shares_live,
+        SUM(CASE WHEN content_id = '3' THEN watch_time ELSE 0 END) AS monthly_watch_time_videos,
+        SUM(CASE WHEN content_id = '2' THEN watch_time ELSE 0 END) AS monthly_watch_time_shorts,
+        SUM(CASE WHEN content_id = '1' THEN watch_time ELSE 0 END) AS monthly_watch_time_live,
+
+        -- Métricas de Nível de Canal
+        MAX(subscribers) AS monthly_subscribers_total,
+        SUM(subscribers_gained) AS monthly_subscribers_gained_total,
+        SUM(subscribers_lost) AS monthly_subscribers_lost_total,
+        SUM(ts_youtube_search) AS monthly_ts_youtube_search,
+        SUM(ts_external) AS monthly_ts_external,
+        SUM(ts_playlists) AS monthly_ts_playlists,
+        SUM(ts_browse_features) AS monthly_ts_browse_features,
+        SUM(ts_direct_unknown) AS monthly_ts_direct_unknown,
+        SUM(ts_other_youtube_features) AS monthly_ts_other_youtube_features,
+        SUM(ts_sound_pages) AS monthly_ts_sound_pages,
+        SUM(ts_end_screens) AS monthly_ts_end_screens,
+        SUM(ts_channel_pages) AS monthly_ts_channel_pages,
+        SUM(ts_suggested_videos) AS monthly_ts_suggested_videos,
+        SUM(ts_notifications) AS monthly_ts_notifications,
+        SUM(ts_shorts_feed) AS monthly_ts_shorts_feed,
+        SUM(ts_videocards_notations) AS monthly_ts_videocards_notations,
+        SUM(ts_hashtag_pages) AS monthly_ts_hashtag_pages,
+        SUM(ts_remixed_video) AS monthly_ts_remixed_video,
+        SUM(ts_related_shorts) AS monthly_ts_related_shorts,
+        SUM(ts_real_time_redirection) AS monthly_ts_real_time_redirection,
+        SUM(ts_live_vertical_feed) AS monthly_ts_live_vertical_feed,
+        SUM(ts_youtube_advertising) AS monthly_ts_youtube_advertising
+
+    FROM wordpress.channel_monthly_metric
+    GROUP BY channel_id, month_key
+)
+
+-- Query Final: Junta a tabela diária de CPM com as CTEs de métricas
+SELECT
+    -- Todas as colunas da tabela base diária (cpm)
+    cpm.*,
+    
+    -- Todas as colunas da CTE de lifetime (lt)
+    lt.*,
+    
+    -- Todas as colunas da CTE mensal (mt)
+    mt.*
+
+FROM
+    wordpress.channel_cpm AS cpm
+    
+-- Junta as métricas de lifetime usando apenas o channel_id
+LEFT JOIN lifetime_metrics_pivoted AS lt
+    ON cpm.channel_id = lt.channel_id
+
+-- Junta as métricas mensais usando o channel_id e a chave do mês
+LEFT JOIN monthly_metrics_pivoted AS mt
+    ON cpm.channel_id = mt.channel_id
+    AND DATE_FORMAT(cpm.date, '%Y-%m-01') = mt.month_key; -- <-- ALTERAÇÃO AQUI
