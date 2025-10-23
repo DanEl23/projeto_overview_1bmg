@@ -1,0 +1,2661 @@
+{
+  "Name": "3 - Extração Mensal Aluir NOVO LAYOUT Inglês",
+  "CreationDate": "2025-10-22",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "https://studio.youtube.com/",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"menu-paper-icon-item-2\"]/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"menu-paper-icon-item-2\"]/div[2]",
+        "xpath=//li[3]/ytcp-ve/a/tp-yt-paper-icon-item/div[2]",
+        "css=#menu-paper-icon-item-2 > div.nav-item-text.style-scope.ytcp-navigation-drawer"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"advanced-analytics\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"advanced-analytics\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "xpath=//ytcp-ve/a/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "css=#advanced-analytics > ytcp-button-shape > button > yt-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"column-picker-trigger\"]/ytcp-dropdown-trigger/div/div[2]/span",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"column-picker-trigger\"]/ytcp-dropdown-trigger/div/div[2]/span",
+        "xpath=//yta-explore-column-picker-dropdown/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[2]/span",
+        "css=#column-picker-trigger > ytcp-dropdown-trigger > div > div.left-container.style-scope.ytcp-dropdown-trigger > span"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//body/yta-explore-column-picker-dialog/ytcp-dialog/tp-yt-paper-dialog/div[2]/div/ytcp-search-bar/input",
+      "Value": "Date",
+      "Targets": [
+        "id=search-input",
+        "xpath=//*[@id=\"search-input\"]",
+        "xpath=//body/yta-explore-column-picker-dialog/ytcp-dialog/tp-yt-paper-dialog/div[2]/div/ytcp-search-bar/input",
+        "css=#search-input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"content\"]/form/div[2]/tp-yt-paper-listbox/tp-yt-paper-item",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"content\"]/form/div[2]/tp-yt-paper-listbox/tp-yt-paper-item",
+        "xpath=//form/div[2]/tp-yt-paper-listbox/tp-yt-paper-item",
+        "css=#content > form > div.picker-group.style-scope.yta-explore-column-picker-dialog > tp-yt-paper-listbox > tp-yt-paper-item"
+      ],
+      "Description": "Aba Data"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div/div/yta-time-picker/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[3]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"picker-trigger\"]/ytcp-dropdown-trigger/div/div[3]",
+        "xpath=//div/div/yta-time-picker/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[3]",
+        "css=#picker-trigger > ytcp-dropdown-trigger > div > div.right-container.style-scope.ytcp-dropdown-trigger"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"text-item-10\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-10\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//tp-yt-paper-item[11]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-10 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div/div/yta-time-picker/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[3]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"picker-trigger\"]/ytcp-dropdown-trigger/div/div[2]/span",
+        "xpath=//div[2]/span",
+        "css=#picker-trigger > ytcp-dropdown-trigger > div > div.left-container.style-scope.ytcp-dropdown-trigger > span"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"text-item-13\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-13\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//tp-yt-paper-item[14]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-13 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"input-1\"]/input",
+      "Value": "03/01/2025",
+      "Targets": [
+        "xpath=//*[@id=\"input-1\"]/input",
+        "xpath=//tp-yt-iron-input/input",
+        "css=#input-1 > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "xpath=//ytcp-button[2]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-select[4]/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[3]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "id=right-icon",
+        "xpath=//*[@id=\"right-icon\"]",
+        "xpath=//ytcp-select[4]/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[3]/tp-yt-iron-icon",
+        "css=#right-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"text-item-2\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-2\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//tp-yt-paper-item[3]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-2 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div[3]/yta-explore-column-picker-dropdown/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[2]/span",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"column-picker-trigger\"]/ytcp-dropdown-trigger/div/div[2]/span",
+        "xpath=//div[3]/yta-explore-column-picker-dropdown/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[2]/span",
+        "css=#column-picker-trigger > ytcp-dropdown-trigger > div > div.left-container.style-scope.ytcp-dropdown-trigger > span"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"deselect-all-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"deselect-all-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "xpath=//yta-explore-column-picker-dialog[2]/ytcp-dialog/tp-yt-paper-dialog/div[3]/div/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "css=#deselect-all-button > ytcp-button-shape > button > yt-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"EXTERNAL_VIEWS\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[6]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Porcentagem Visualizada Média"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"EXTERNAL_WATCH_TIME\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[6]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Porcentagem Visualizada Média"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"AVERAGE_WATCH_TIME\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[6]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Porcentagem Visualizada Média"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"TOTAL_ESTIMATED_EARNINGS\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[6]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Porcentagem Visualizada Média"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"AVERAGE_WATCH_PERCENTAGE\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[6]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Porcentagem Visualizada Média"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"SUBSCRIBERS_NET_CHANGE\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[4]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Inscritos"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"VIDEO_COUNT_FIRST_PUBLISHED\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[8]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Videos Publicados"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"VIDEO_THUMBNAIL_IMPRESSIONS\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[4]/div/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Impressões"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"VIDEO_THUMBNAIL_IMPRESSIONS_VTR\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[4]/div[2]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Taxa de Cliques de impressões"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"EPM\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[14]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "RPM"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"RATINGS_LIKES\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[6]/div[4]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Likes"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"SHARINGS\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[6]/div[7]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Compartilhamentos"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"COMMENTS\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[6]/div[8]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Comentários"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"ESTIMATED_UNIQUE_VIEWERS\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[4]/div[4]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Espectadores Unicos"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"POST_IMPRESSIONS\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[18]/div/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Impressões da Postagem"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"POST_LIKES\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[18]/div[2]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Gostei da Postagem"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"POST_LIKES_PER_IMPRESSIONS\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[18]/div[3]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Média de Gostei da Postagem"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"IMPRESSIONS_CPM\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[12]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "CPM"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"CPM\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[11]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "CPM de exibição"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"POST_VOTES\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[18]/div[4]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Respostas a Postagem"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"SUBSCRIBERS_GAINED\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[18]/div[4]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Respostas a Postagem"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"SUBSCRIBERS_LOST\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[18]/div[4]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": "Respostas a Postagem"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div[3]/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "xpath=//div[3]/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=text-input",
+      "Value": "",
+      "Targets": [
+        "id=text-input",
+        "xpath=//*[@id=\"text-input\"]",
+        "xpath=//input[@id='text-input']",
+        "xpath=//ytcp-chip-bar/div/input",
+        "css=#text-input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*='{\"filterName\":\\\"CREATOR_CONTENT_TYPE\"}']",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-15\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//tp-yt-paper-item[16]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-15 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-button[3]/div/div",
+      "Value": "",
+      "Targets": [
+        "id=radioLabel",
+        "xpath=//*[@id=\"radioLabel\"]",
+        "xpath=//tp-yt-paper-radio-button[2]/div[2]",
+        "css=#radioLabel"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=chip-text",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//div[@id='chip-text']",
+        "xpath=//ytcp-chip/div",
+        "css=#chip-text"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div/div",
+      "Value": "",
+      "Targets": [
+        "id=offRadio",
+        "xpath=//*[@id=\"offRadio\"]",
+        "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div/div",
+        "css=#offRadio"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=chip-text",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//div[@id='chip-text']",
+        "xpath=//ytcp-chip/div",
+        "css=#chip-text"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-button[2]/div/div",
+      "Value": "",
+      "Targets": [
+        "id=offRadio",
+        "xpath=//*[@id=\"offRadio\"]",
+        "xpath=//tp-yt-paper-radio-button[2]/div/div",
+        "css=#offRadio"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"delete-icon\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"delete-icon\"]/tp-yt-iron-icon",
+        "xpath=//ytcp-chip/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#delete-icon > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div/div/yta-time-picker/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[2]/div/div",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"picker-trigger\"]/ytcp-dropdown-trigger/div/div[2]/div/div",
+        "xpath=//div/div/yta-time-picker/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[2]/div/div",
+        "css=#picker-trigger > ytcp-dropdown-trigger > div > div.left-container.style-scope.ytcp-dropdown-trigger > div > div"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"text-item-13\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-13\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//tp-yt-paper-item[14]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-13 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"input-3\"]/input",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"input-1\"]/input",
+        "xpath=//iron-input/input",
+        "css=#input-1 > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"input-3\"]/input",
+      "Value": "04/01/2025",
+      "Targets": [
+        "xpath=//*[@id=\"input-1\"]/input",
+        "xpath=//iron-input/input",
+        "css=#input-1 > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-button[2]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "xpath=//ytcp-button[2]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=text-input",
+      "Value": "",
+      "Targets": [
+        "id=text-input",
+        "xpath=//*[@id=\"text-input\"]",
+        "xpath=//input[@id='text-input']",
+        "xpath=//ytcp-chip-bar/div/input",
+        "css=#text-input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*='{\"filterName\":\\\"CREATOR_CONTENT_TYPE\"}']",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-15\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//tp-yt-paper-item[16]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-15 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-button[3]/div/div",
+      "Value": "",
+      "Targets": [
+        "id=offRadio",
+        "xpath=//*[@id=\"offRadio\"]",
+        "xpath=//tp-yt-paper-radio-button[3]/div/div",
+        "css=#offRadio"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=text-input",
+      "Value": "",
+      "Targets": [
+        "id=text-input",
+        "xpath=//*[@id=\"text-input\"]",
+        "xpath=//input[@id='text-input']",
+        "xpath=//ytcp-chip-bar/div/input",
+        "css=#text-input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*='{\"filterName\":\"PUBLISH_DATE\"}']",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-3\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[4]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[4]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-3 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"input-5\"]/input",
+      "Value": "04/01/2025",
+      "Targets": [
+        "xpath=//*[@id=\"input-5\"]/input",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/div/form/div/tp-yt-paper-input/tp-yt-paper-input-container/div[2]/div/iron-input/input",
+        "css=#input-5 > input"
+      ],
+      "Description": "ATÉ AQUI"
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"input-6\"]/input",
+      "Value": "04/30/2025",
+      "Targets": [
+        "xpath=//*[@id=\"input-5\"]/input",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/div/form/div/tp-yt-paper-input/tp-yt-paper-input-container/div[2]/div/iron-input/input",
+        "css=#input-5 > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/ytcp-scrollable-calendar/div/tp-yt-iron-list/div/div/div[2]/span[3]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"items\"]/div/div[2]/span[3]",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/ytcp-scrollable-calendar/div/tp-yt-iron-list/div/div/div[2]/span[3]",
+        "css=#items > div:nth-child(2) > div:nth-child(2) > span.calendar-day.period-start.selected.highlighted.style-scope.ytcp-scrollable-calendar.style-scope.ytcp-scrollable-calendar"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//ytcp-chip[2]/div",
+        "css=#chip-text"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div[2]",
+      "Value": "",
+      "Targets": [
+        "id=radioLabel",
+        "xpath=//*[@id=\"radioLabel\"]",
+        "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div[2]",
+        "css=#radioLabel"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//ytcp-chip[2]/div",
+        "css=#chip-text"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"ytcp-filter-paper-radio-group\"]/tp-yt-paper-radio-button[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"ytcp-filter-paper-radio-group\"]/tp-yt-paper-radio-button[2]",
+        "xpath=//tp-yt-paper-radio-button[2]",
+        "css=#ytcp-filter-paper-radio-group > tp-yt-paper-radio-button:nth-child(5)"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//div[@id='chip-text']",
+        "xpath=//ytcp-chip/div",
+        "css=#chip-text"
+      ],
+      "Description": "A partir daqui"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-button[3]/div/div",
+      "Value": "",
+      "Targets": [
+        "id=offRadio",
+        "xpath=//*[@id=\"offRadio\"]",
+        "xpath=//tp-yt-paper-radio-button[3]/div/div",
+        "css=#offRadio"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=chip-text",
+      "Value": "",
+      "Targets": [
+        "id=text-input",
+        "xpath=//*[@id=\"text-input\"]",
+        "xpath=//input[@id='text-input']",
+        "xpath=//ytcp-chip-bar/div/input",
+        "css=#text-input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"input-8\"]/input",
+      "Value": "05/31/2025",
+      "Targets": [
+        "xpath=//*[@id=\"input-5\"]/input",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/div/form/div/tp-yt-paper-input/tp-yt-paper-input-container/div[2]/div/iron-input/input",
+        "css=#input-5 > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"input-7\"]/input",
+      "Value": "05/01/2025",
+      "Targets": [
+        "xpath=//*[@id=\"input-5\"]/input",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/div/form/div/tp-yt-paper-input/tp-yt-paper-input-container/div[2]/div/iron-input/input",
+        "css=#input-5 > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/ytcp-scrollable-calendar/div/tp-yt-iron-list/div/div/div[2]/span[5]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"items\"]/div/div[2]/span[5]",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/ytcp-scrollable-calendar/div/tp-yt-iron-list/div/div/div[2]/span[5]",
+        "css=#items > div:nth-child(2) > div:nth-child(2) > span.calendar-day.period-start.selected.highlighted.style-scope.ytcp-scrollable-calendar.style-scope.ytcp-scrollable-calendar"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//ytcp-chip[2]/div",
+        "css=#chip-text"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div[2]",
+      "Value": "",
+      "Targets": [
+        "id=radioLabel",
+        "xpath=//*[@id=\"radioLabel\"]",
+        "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div[2]",
+        "css=#radioLabel"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//ytcp-chip[2]/div",
+        "css=#chip-text"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"ytcp-filter-paper-radio-group\"]/tp-yt-paper-radio-button[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"ytcp-filter-paper-radio-group\"]/tp-yt-paper-radio-button[2]",
+        "xpath=//tp-yt-paper-radio-button[2]",
+        "css=#ytcp-filter-paper-radio-group > tp-yt-paper-radio-button:nth-child(5)"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//div[@id='chip-text']",
+        "xpath=//ytcp-chip/div",
+        "css=#chip-text"
+      ],
+      "Description": "A partir daqui"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-button[3]/div/div",
+      "Value": "",
+      "Targets": [
+        "id=offRadio",
+        "xpath=//*[@id=\"offRadio\"]",
+        "xpath=//tp-yt-paper-radio-button[3]/div/div",
+        "css=#offRadio"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=chip-text",
+      "Value": "",
+      "Targets": [
+        "id=text-input",
+        "xpath=//*[@id=\"text-input\"]",
+        "xpath=//input[@id='text-input']",
+        "xpath=//ytcp-chip-bar/div/input",
+        "css=#text-input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"input-10\"]/input",
+      "Value": "06/30/2025",
+      "Targets": [
+        "xpath=//*[@id=\"input-5\"]/input",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/div/form/div/tp-yt-paper-input/tp-yt-paper-input-container/div[2]/div/iron-input/input",
+        "css=#input-5 > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"input-9\"]/input",
+      "Value": "06/01/2025",
+      "Targets": [
+        "xpath=//*[@id=\"input-5\"]/input",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/div/form/div/tp-yt-paper-input/tp-yt-paper-input-container/div[2]/div/iron-input/input",
+        "css=#input-5 > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/ytcp-scrollable-calendar/div/tp-yt-iron-list/div/div[3]/div[2]/span",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"items\"]/div[3]/div[2]/span",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/ytcp-scrollable-calendar/div/tp-yt-iron-list/div/div[3]/div[2]/span",
+        "css=#items > div:nth-child(4) > div:nth-child(2) > span.calendar-day.period-start.selected.highlighted.style-scope.ytcp-scrollable-calendar.style-scope.ytcp-scrollable-calendar"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//ytcp-chip[2]/div",
+        "css=#chip-text"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div[2]",
+      "Value": "",
+      "Targets": [
+        "id=radioLabel",
+        "xpath=//*[@id=\"radioLabel\"]",
+        "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div[2]",
+        "css=#radioLabel"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//ytcp-chip[2]/div",
+        "css=#chip-text"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"ytcp-filter-paper-radio-group\"]/tp-yt-paper-radio-button[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"ytcp-filter-paper-radio-group\"]/tp-yt-paper-radio-button[2]",
+        "xpath=//tp-yt-paper-radio-button[2]",
+        "css=#ytcp-filter-paper-radio-group > tp-yt-paper-radio-button:nth-child(5)"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//div[@id='chip-text']",
+        "xpath=//ytcp-chip/div",
+        "css=#chip-text"
+      ],
+      "Description": "A partir daqui"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-button[3]/div/div",
+      "Value": "",
+      "Targets": [
+        "id=offRadio",
+        "xpath=//*[@id=\"offRadio\"]",
+        "xpath=//tp-yt-paper-radio-button[3]/div/div",
+        "css=#offRadio"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=chip-text",
+      "Value": "",
+      "Targets": [
+        "id=text-input",
+        "xpath=//*[@id=\"text-input\"]",
+        "xpath=//input[@id='text-input']",
+        "xpath=//ytcp-chip-bar/div/input",
+        "css=#text-input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"input-12\"]/input",
+      "Value": "07/31/2025",
+      "Targets": [
+        "xpath=//*[@id=\"input-5\"]/input",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/div/form/div/tp-yt-paper-input/tp-yt-paper-input-container/div[2]/div/iron-input/input",
+        "css=#input-5 > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"input-11\"]/input",
+      "Value": "07/01/2025",
+      "Targets": [
+        "xpath=//*[@id=\"input-5\"]/input",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/div/form/div/tp-yt-paper-input/tp-yt-paper-input-container/div[2]/div/iron-input/input",
+        "css=#input-5 > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/ytcp-scrollable-calendar/div/tp-yt-iron-list/div/div[4]/div[2]/span[3]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"items\"]/div[4]/div[2]/span[3]",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/ytcp-scrollable-calendar/div/tp-yt-iron-list/div/div[4]/div[2]/span[3]",
+        "css=#items > div:nth-child(5) > div:nth-child(2) > span.calendar-day.period-start.selected.highlighted.style-scope.ytcp-scrollable-calendar.style-scope.ytcp-scrollable-calendar"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//ytcp-chip[2]/div",
+        "css=#chip-text"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div[2]",
+      "Value": "",
+      "Targets": [
+        "id=radioLabel",
+        "xpath=//*[@id=\"radioLabel\"]",
+        "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div[2]",
+        "css=#radioLabel"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//ytcp-chip[2]/div",
+        "css=#chip-text"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"ytcp-filter-paper-radio-group\"]/tp-yt-paper-radio-button[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"ytcp-filter-paper-radio-group\"]/tp-yt-paper-radio-button[2]",
+        "xpath=//tp-yt-paper-radio-button[2]",
+        "css=#ytcp-filter-paper-radio-group > tp-yt-paper-radio-button:nth-child(5)"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//div[@id='chip-text']",
+        "xpath=//ytcp-chip/div",
+        "css=#chip-text"
+      ],
+      "Description": "A partir daqui"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-button[3]/div/div",
+      "Value": "",
+      "Targets": [
+        "id=offRadio",
+        "xpath=//*[@id=\"offRadio\"]",
+        "xpath=//tp-yt-paper-radio-button[3]/div/div",
+        "css=#offRadio"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=chip-text",
+      "Value": "",
+      "Targets": [
+        "id=text-input",
+        "xpath=//*[@id=\"text-input\"]",
+        "xpath=//input[@id='text-input']",
+        "xpath=//ytcp-chip-bar/div/input",
+        "css=#text-input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"input-14\"]/input",
+      "Value": "08/31/2025",
+      "Targets": [
+        "xpath=//*[@id=\"input-5\"]/input",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/div/form/div/tp-yt-paper-input/tp-yt-paper-input-container/div[2]/div/iron-input/input",
+        "css=#input-5 > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"input-13\"]/input",
+      "Value": "08/01/2025",
+      "Targets": [
+        "xpath=//*[@id=\"input-5\"]/input",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/div/form/div/tp-yt-paper-input/tp-yt-paper-input-container/div[2]/div/iron-input/input",
+        "css=#input-5 > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"items\"]/div[5]/div[2]/span[6]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"items\"]/div[5]/div[2]/span[6]",
+        "xpath=//div[5]/div[2]/span[6]",
+        "css=#items > div:nth-child(6) > div:nth-child(2) > span.calendar-day.period-start.selected.highlighted.style-scope.ytcp-scrollable-calendar.style-scope.ytcp-scrollable-calendar"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//ytcp-chip[2]/div",
+        "css=#chip-text"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div[2]",
+      "Value": "",
+      "Targets": [
+        "id=radioLabel",
+        "xpath=//*[@id=\"radioLabel\"]",
+        "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div[2]",
+        "css=#radioLabel"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//ytcp-chip[2]/div",
+        "css=#chip-text"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"ytcp-filter-paper-radio-group\"]/tp-yt-paper-radio-button[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"ytcp-filter-paper-radio-group\"]/tp-yt-paper-radio-button[2]",
+        "xpath=//tp-yt-paper-radio-button[2]",
+        "css=#ytcp-filter-paper-radio-group > tp-yt-paper-radio-button:nth-child(5)"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//div[@id='chip-text']",
+        "xpath=//ytcp-chip/div",
+        "css=#chip-text"
+      ],
+      "Description": "A partir daqui"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-button[3]/div/div",
+      "Value": "",
+      "Targets": [
+        "id=offRadio",
+        "xpath=//*[@id=\"offRadio\"]",
+        "xpath=//tp-yt-paper-radio-button[3]/div/div",
+        "css=#offRadio"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=chip-text",
+      "Value": "",
+      "Targets": [
+        "id=text-input",
+        "xpath=//*[@id=\"text-input\"]",
+        "xpath=//input[@id='text-input']",
+        "xpath=//ytcp-chip-bar/div/input",
+        "css=#text-input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"input-16\"]/input",
+      "Value": "09/30/2025",
+      "Targets": [
+        "xpath=//*[@id=\"input-5\"]/input",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/div/form/div/tp-yt-paper-input/tp-yt-paper-input-container/div[2]/div/iron-input/input",
+        "css=#input-5 > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"input-15\"]/input",
+      "Value": "09/01/2025",
+      "Targets": [
+        "xpath=//*[@id=\"input-5\"]/input",
+        "xpath=//ytcp-filter-date-period-dialog-content/ytcp-date-period-picker/div/form/div/tp-yt-paper-input/tp-yt-paper-input-container/div[2]/div/iron-input/input",
+        "css=#input-5 > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"items\"]/div[6]/div[2]/span[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"items\"]/div[6]/div[2]/span[2]",
+        "xpath=//div[6]/div[2]/span[2]",
+        "css=#items > div:nth-child(7) > div:nth-child(2) > span.calendar-day.period-start.selected.highlighted.style-scope.ytcp-scrollable-calendar.style-scope.ytcp-scrollable-calendar"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//ytcp-chip[2]/div",
+        "css=#chip-text"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div[2]",
+      "Value": "",
+      "Targets": [
+        "id=radioLabel",
+        "xpath=//*[@id=\"radioLabel\"]",
+        "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div[2]",
+        "css=#radioLabel"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-chip[2]/div",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//ytcp-chip[2]/div",
+        "css=#chip-text"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-button[2]/div/div",
+      "Value": "",
+      "Targets": [
+        "id=offRadio",
+        "xpath=//*[@id=\"offRadio\"]",
+        "xpath=//tp-yt-paper-radio-button[2]/div/div",
+        "css=#offRadio"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"delete-icon\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"delete-icon\"]/tp-yt-iron-icon",
+        "xpath=//ytcp-chip/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#delete-icon > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"delete-icon\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"delete-icon\"]/tp-yt-iron-icon",
+        "xpath=//ytcp-chip/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#delete-icon > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"column-picker-trigger\"]/ytcp-dropdown-trigger/div/div[2]/span",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"column-picker-trigger\"]/ytcp-dropdown-trigger/div/div[2]/span",
+        "xpath=//yta-explore-column-picker-dropdown/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[2]/span",
+        "css=#column-picker-trigger > ytcp-dropdown-trigger > div > div.left-container.style-scope.ytcp-dropdown-trigger > span"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//yta-explore-column-picker-dialog[2]/ytcp-dialog/tp-yt-paper-dialog/div[2]/div/ytcp-search-bar/input",
+      "Value": "Traffic So",
+      "Targets": [
+        "id=search-input",
+        "xpath=//*[@id=\"search-input\"]",
+        "xpath=//yta-explore-column-picker-dialog[2]/ytcp-dialog/tp-yt-paper-dialog/div[2]/div/ytcp-search-bar/input",
+        "css=#search-input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"content\"]/form/div[2]/tp-yt-paper-listbox/tp-yt-paper-item",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"content\"]/form/div[2]/tp-yt-paper-listbox/tp-yt-paper-item",
+        "xpath=//div[2]/tp-yt-paper-listbox/tp-yt-paper-item",
+        "css=#content > form > div.picker-group.style-scope.yta-explore-column-picker-dialog > tp-yt-paper-listbox > tp-yt-paper-item"
+      ],
+      "Description": "Origem do Tráfego"
+    },
+    {
+      "Command": "click",
+      "Target": "id=text-input",
+      "Value": "",
+      "Targets": [
+        "id=text-input",
+        "xpath=//*[@id=\"text-input\"]",
+        "xpath=//input[@id='text-input']",
+        "xpath=//ytcp-chip-bar/div/input",
+        "css=#text-input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*='{\"filterName\":\\\"CREATOR_CONTENT_TYPE\"}']",
+      "Value": "",
+      "Targets": [
+        "id=text-input",
+        "xpath=//*[@id=\"text-input\"]",
+        "xpath=//input[@id='text-input']",
+        "xpath=//ytcp-chip-bar/div/input",
+        "css=#text-input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-button[3]/div[2]",
+      "Value": "",
+      "Targets": [
+        "id=radioLabel",
+        "xpath=//*[@id=\"radioLabel\"]",
+        "xpath=//tp-yt-paper-radio-button[3]/div[2]",
+        "css=#radioLabel"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=chip-text",
+      "Value": "",
+      "Targets": [
+        "id=chip-text",
+        "xpath=//*[@id=\"chip-text\"]",
+        "xpath=//div[@id='chip-text']",
+        "xpath=//ytcp-chip/div",
+        "css=#chip-text"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div/div",
+      "Value": "",
+      "Targets": [
+        "id=offRadio",
+        "xpath=//*[@id=\"offRadio\"]",
+        "xpath=//tp-yt-paper-radio-group/tp-yt-paper-radio-button/div/div",
+        "css=#offRadio"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//tp-yt-paper-dialog/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+        "xpath=//div[2]/div/div/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#export-button > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"delete-icon\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"delete-icon\"]/tp-yt-iron-icon",
+        "xpath=//ytcp-chip/ytcp-icon-button/tp-yt-iron-icon",
+        "css=#delete-icon > tp-yt-iron-icon"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"column-picker-trigger\"]/ytcp-dropdown-trigger/div/div[2]/span",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"column-picker-trigger\"]/ytcp-dropdown-trigger/div/div[2]/span",
+        "xpath=//yta-explore-column-picker-dropdown/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[2]/span",
+        "css=#column-picker-trigger > ytcp-dropdown-trigger > div > div.left-container.style-scope.ytcp-dropdown-trigger > span"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//yta-explore-column-picker-dialog[2]/ytcp-dialog/tp-yt-paper-dialog/div[2]/div/ytcp-search-bar/input",
+      "Value": "Post",
+      "Targets": [
+        "id=search-input",
+        "xpath=//*[@id=\"search-input\"]",
+        "xpath=//yta-explore-column-picker-dialog[2]/ytcp-dialog/tp-yt-paper-dialog/div[2]/div/ytcp-search-bar/input",
+        "css=#search-input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"content\"]/form/div[2]/tp-yt-paper-listbox/tp-yt-paper-item",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"content\"]/form/div[2]/tp-yt-paper-listbox/tp-yt-paper-item",
+        "xpath=//div[2]/tp-yt-paper-listbox/tp-yt-paper-item",
+        "css=#content > form > div.picker-group.style-scope.yta-explore-column-picker-dialog > tp-yt-paper-listbox > tp-yt-paper-item"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "6000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"export-button\"]/tp-yt-iron-icon",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=[test-id*=\"CSV\"]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-1\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//ytcp-text-menu[3]/tp-yt-paper-dialog/tp-yt-paper-listbox/tp-yt-paper-item[2]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-1 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"column-picker-trigger\"]/ytcp-dropdown-trigger/div/div[2]/span",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"column-picker-trigger\"]/ytcp-dropdown-trigger/div/div[2]/span",
+        "xpath=//yta-explore-column-picker-dropdown/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[2]/span",
+        "css=#column-picker-trigger > ytcp-dropdown-trigger > div > div.left-container.style-scope.ytcp-dropdown-trigger > span"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//yta-explore-column-picker-dialog[2]/ytcp-dialog/tp-yt-paper-dialog/div[2]/div/ytcp-search-bar/input",
+      "Value": "Date",
+      "Targets": [
+        "id=search-input",
+        "xpath=//*[@id=\"search-input\"]",
+        "xpath=//yta-explore-column-picker-dialog[2]/ytcp-dialog/tp-yt-paper-dialog/div[2]/div/ytcp-search-bar/input",
+        "css=#search-input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"content\"]/form/div[3]/tp-yt-paper-listbox/tp-yt-paper-item",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"content\"]/form/div[3]/tp-yt-paper-listbox/tp-yt-paper-item",
+        "xpath=//div[3]/tp-yt-paper-listbox/tp-yt-paper-item",
+        "css=#content > form > div.picker-group.style-scope.yta-explore-column-picker-dialog > tp-yt-paper-listbox > tp-yt-paper-item"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div[3]/yta-explore-column-picker-dropdown/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[2]/span",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"column-picker-trigger\"]/ytcp-dropdown-trigger/div/div[2]/span",
+        "xpath=//div[3]/yta-explore-column-picker-dropdown/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[2]/span",
+        "css=#column-picker-trigger > ytcp-dropdown-trigger > div > div.left-container.style-scope.ytcp-dropdown-trigger > span"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"SUBSCRIBERS_NET_CHANGE\"]",
+      "Value": "",
+      "Targets": [
+        "id=checkbox-container",
+        "xpath=//*[@id=\"checkbox-container\"]",
+        "xpath=//div[4]/div/ytcp-checkbox-lit/div/div/div/div",
+        "css=#checkbox-container"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div[3]/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//div[3]/div[2]/ytcp-button/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div/div/yta-time-picker/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[2]/span",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"picker-trigger\"]/ytcp-dropdown-trigger/div/div[2]/span",
+        "xpath=//div/div/yta-time-picker/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[2]/span",
+        "css=#picker-trigger > ytcp-dropdown-trigger > div > div.left-container.style-scope.ytcp-dropdown-trigger > span"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"text-item-4\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-4\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//tp-yt-paper-item[5]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-4 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div/div/yta-time-picker/ytcp-text-dropdown-trigger/ytcp-dropdown-trigger/div/div[2]/span",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"picker-trigger\"]/ytcp-dropdown-trigger/div/div[2]/span",
+        "xpath=//div[2]/span",
+        "css=#picker-trigger > ytcp-dropdown-trigger > div > div.left-container.style-scope.ytcp-dropdown-trigger > span"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"text-item-13\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"text-item-13\"]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "xpath=//tp-yt-paper-item[14]/ytcp-ve/tp-yt-paper-item-body/div/div/div/yt-formatted-string",
+        "css=#text-item-13 > ytcp-ve > tp-yt-paper-item-body > div > div > div > yt-formatted-string"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"input-18\"]/input",
+      "Value": "09/30/2025",
+      "Targets": [
+        "xpath=//*[@id=\"input-18\"]/input",
+        "xpath=//div[3]/tp-yt-paper-input/tp-yt-paper-input-container/div[2]/div/iron-input/input",
+        "css=#input-18 > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//ytcp-button[2]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"apply-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "xpath=//ytcp-button[2]/ytcp-button-shape/button/yt-touch-feedback-shape/div/div[2]",
+        "css=#apply-button > ytcp-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill"
+      ],
+      "Description": ""
+    }
+  ]
+}
