@@ -76,7 +76,7 @@ METRIC_ICON_MAP = {
 
 
 def buscar_lista_artistas():
-    with open('exports.txt') as f: 
+    with open('exports.txt', encoding='latin-1') as f:  #adicionando o encoding. Samuel se o erro continuar mude de 'latin-1' para 'windows-1252'
         return [line.rstrip() for line in f.readlines()]
 
 
@@ -1357,7 +1357,7 @@ def gerar_tabela_inscritos_avancada(artista):
          if len(df_full) >= 7:
              df_full = df_full.tail(7).reset_index(drop=True)
 
-         with open(f"dados_full/{artista}/sub.txt", "r") as f:
+         with open(f"dados_full/{artista}/sub.txt", "r", encoding='latin-1') as f: #adicionando encoding. Samuel caso continue o erro mudar 'latin-1' para 'windows-1252'
              inscant = int(''.join(f.readline().split('.')))
 
          inscant_inicial_periodo = inscant - df_full['Inscritos'].sum()
