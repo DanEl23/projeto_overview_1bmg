@@ -1,4 +1,5 @@
 import os
+import sys
 import glob
 import zipfile
 import re
@@ -36,15 +37,6 @@ NEWEST_MONTH_MAP = {
     '(12)': 'videos_05.csv', '(13)': 'lives_05.csv', '(14)': 'shorts_05.csv',
     '(15)': 'videos_06.csv', '(16)': 'lives_06.csv', '(17)': 'shorts_06.csv'
 }
-
-def buscar_lista_artistas():
-    """Lê o arquivo exports.txt e retorna uma lista com os nomes dos artistas."""
-    try:
-        with open('exports.txt', 'r', encoding='utf-8') as f:
-            return [line.strip() for line in f if line.strip()]
-    except FileNotFoundError:
-        print("Erro: Arquivo 'exports.txt' não encontrado.")
-        return []
 
 def remover_csv_antigos(artista):
     """Para cada artista, remove os .csv antigos, exceto 'postagem.csv'."""
@@ -169,17 +161,14 @@ def identificar_arquivos_zip(artista):
 
 
 def run(artista):
-    """Função principal para executar o processo para um artista específico."""
-    print(f"\n--- Iniciando extração unificada para: {artista} ---")
-    remover_csv_antigos(artista)
-    identificar_arquivos_zip(artista)
-    print(f"--- Finalizado: {artista} ---")
-
+    
+    print(f"Extraindo dados para: {artista}")
+    print(f"Finalizado: {artista}")
 
 if __name__ == "__main__":
-    # Esta parte é executada apenas se o script for chamado diretamente.
-    # O seu orquestrador `main.py` deve chamar a função `run(artista)`.
-    print("Executando para todos os artistas em 'exports.txt'.")
-    lista_de_artistas = buscar_lista_artistas()
-    for artista_da_lista in lista_de_artistas:
-        run(artista_da_lista)
+    if len(sys.argv) < 2:
+        print("Erro: Nenhum artista fornecido. Este script deve ser chamado pelo main.py")
+        sys.exit(1)
+    
+    artista_argumento = sys.argv[1]
+    run(artista_argumento)
