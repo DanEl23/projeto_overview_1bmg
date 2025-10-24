@@ -183,28 +183,41 @@ def preencher_colunas_vazias(artista):
 
 
 def update_traffic_source(artista):
-    arquivos_csv = glob.glob(f'{path}/dados_full/{artista}/*.csv')
+    base_path = f'{path}/dados_full/{artista}'
+    arquivos_csv = glob.glob(f'{base_path}/*.csv')
     origem_trafego = ['Recursos de navegação', 'Vídeos sugeridos', 'Feed dos Shorts', 
                       'Externa', 'Notificações', 'Pesquisa do YouTube', 'Playlists', 
                       'Publicidade no YouTube']
     
-    for arquivo in arquivos_csv:
-        arq = pd.read_csv(arquivo)
-        
-        if "total" in arquivo:
-            unique_months = arq['Data'].unique()
-            unique_months = np.sort(unique_months)
-            unique_months = unique_months[1:7]  # Removendo o primeiro elemento sem usar numpy
+    # Passo 1: Encontrar e processar 'total.csv' para definir 'unique_months'
+    total_file_path = f'{base_path}/total.csv'
+    unique_months = []  # Inicializa como uma lista vazia para segurança
+    try:
+        arq_total = pd.read_csv(total_file_path)
+        unique_months_all = arq_total['Data'].unique()
+        unique_months_sorted = np.sort(unique_months_all)
+        unique_months = unique_months_sorted[1:7]  # Pega do 2º ao 7º mês
+    except FileNotFoundError:
+        print(f"Aviso: Arquivo 'total.csv' não encontrado para {artista}. Não é possível atualizar as origens de tráfego.")
+        return  # Sai da função se 'total.csv' não for encontrado
+    except Exception as e:
+        print(f"Erro ao processar 'total.csv' para {artista}: {e}")
+        return
 
-        elif "origem_" in arquivo:
+    # Passo 2: Iterar por todos os arquivos CSV e atualizar aqueles com "origem_"
+    for arquivo in arquivos_csv:
+        if "origem_" in arquivo:
+            arq = pd.read_csv(arquivo)
             for origem in origem_trafego:
                 if origem not in arq['Origem do tráfego'].values:
-                    new_rows = pd.DataFrame({
-                        'Data': unique_months,
-                        'Origem do tráfego': [origem] * len(unique_months),
-                        'Visualizações': [0] * len(unique_months)
-                    })
-                    arq = pd.concat([arq, new_rows], ignore_index=True)
+                    # Cria novas linhas apenas se 'unique_months' não estiver vazio
+                    if len(unique_months) > 0:
+                        new_rows = pd.DataFrame({
+                            'Data': unique_months,
+                            'Origem do tráfego': [origem] * len(unique_months),
+                            'Visualizações': [0] * len(unique_months)
+                        })
+                        arq = pd.concat([arq, new_rows], ignore_index=True)
             
             arq.to_csv(arquivo, index=False)
 
