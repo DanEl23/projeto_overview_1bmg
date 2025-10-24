@@ -1,16 +1,9 @@
 import os
+import sys
 import glob
 import zipfile
 import re
 
-def buscar_lista_artistas():
-    # (código idêntico ao anterior)
-    try:
-        with open('exports.txt', 'r', encoding='utf-8') as f:
-            return [line.strip() for line in f if line.strip()]
-    except FileNotFoundError:
-        print("Erro: Arquivo 'exports.txt' não encontrado.")
-        return []
 
 def remover_csv_antigos(artista):
     # (código idêntico ao anterior)
@@ -118,7 +111,14 @@ def run(artista):
     identificar_arquivos_zip(artista)
     print(f"--- Finalizado: {artista} ---")
 
+
 if __name__ == "__main__":
-    lista_de_artistas = buscar_lista_artistas()
-    for artista in lista_de_artistas:
-        run(artista)
+    # Pega o nome do artista do argumento passado pelo main.py
+    if len(sys.argv) < 2:
+        print("Erro: Nenhum artista fornecido. Este script deve ser chamado pelo main.py")
+        sys.exit(1) # Sai com erro
+    
+    artista_argumento = sys.argv[1]
+    
+    # Executa a função run APENAS para esse artista
+    run(artista_argumento)
