@@ -1,6 +1,7 @@
+import os
+import sys
 import pandas as pd
 import numpy as np
-import os
 from typing import List
 from dateutil.relativedelta import relativedelta
 
@@ -340,28 +341,29 @@ def gerar_relatorio_para_artista(artista: str):
         tabela_desvio_media.to_excel(writer, sheet_name='Desvio', index=True)
         tabela_desvio_anterior.to_excel(writer, sheet_name='Mês Anterior', index=True)
 
-    print(f"Relatório para {artista} salvo com sucesso ✅")
-
-
-def buscar_lista_artistas():
-    caminho_exports = os.path.join(path, 'exports.txt')
-    if not os.path.exists(caminho_exports): return []
-    with open(caminho_exports) as f: lines = f.readlines()
-    return [i.strip() for i in lines if i.strip()]
+    print(f"Relatório para {artista} salvo com sucesso")
 
 
 def run():
-    lista_de_artistas = buscar_lista_artistas()
-    for artista_selecionado in lista_de_artistas:
-        try:
-            gerar_relatorio_para_artista(artista_selecionado)
-        except FileNotFoundError as e:
-            print(f"\nERRO: Arquivo não encontrado ao processar '{artista_selecionado}': {e.filename}\n")
-        except Exception as e:
-            print(f"\nERRO: Ocorreu um problema inesperado ao processar '{artista_selecionado}': {e}\n")
-            import traceback
-            traceback.print_exc()
+    print(f"Gerando report CA para: {artista}")
+    try:
+        gerar_relatorio_para_artista(artista_selecionado)
+    except FileNotFoundError as e:
+        print(f"\nERRO: Arquivo não encontrado ao processar '{artista_selecionado}': {e.filename}\n")
+    except Exception as e:
+        print(f"\nERRO: Ocorreu um problema inesperado ao processar '{artista_selecionado}': {e}\n")
+        import traceback
+        traceback.print_exc()
+    print(f"Report CA para {artista} finalizado.")
 
 
-if __name__ == '__main__':
-    run()
+if __name__ == "__main__":
+    # Pega o nome do artista do argumento passado pelo main.py
+    if len(sys.argv) < 2:
+        print("Erro: Nenhum artista fornecido. Este script deve ser chamado pelo main.py")
+        sys.exit(1) # Sai com erro
+    
+    artista_argumento = sys.argv[1]
+    
+    # Executa a função run APENAS para esse artista
+    run(artista_argumento)
