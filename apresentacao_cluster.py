@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import pandas as pd
 from pptx import Presentation
@@ -105,31 +106,6 @@ def analisar_documento_word(caminho_arquivo):
         return dados_extraidos
     except Exception as e:
         return {"erro": f"Falha ao ler o arquivo .docx: {e}"}
-    
-
-def buscar_lista_artistas():
-    # Carrega o dicionário de comparações do arquivo JSON
-    with open('comparacoes.json', encoding='latin-1') as json_file:
-        comparacoes = json.load(json_file)
-
-    # Acesso a exports.txt para buscar o nome dos artistas
-    with open('exports.txt', encoding='latin-1') as f:
-        lines = f.readlines()
-    
-    # Limpa espaços em branco no final de cada linha
-    lines = [i.rstrip() for i in lines]
-
-    # Preparar a lista para armazenar os pares de artistas
-    artistas_e_correspondentes = []
-
-    # Buscar correspondência para cada artista
-    for artista in lines:
-        if artista in comparacoes:
-            artistas_e_correspondentes.append((artista, comparacoes[artista]))
-        else:
-            print(f'Sem correspondência para: {artista}')
-
-    return artistas_e_correspondentes
 
 
 def create_apresentation(artista, artist, mes_foco, textos_extraidos, graficos_path):
@@ -1430,37 +1406,64 @@ def create_apresentation(artista, artist, mes_foco, textos_extraidos, graficos_p
     prs.save(f'export_teste/Overview Mensal {mes_foco} {artist}.pptx')
 
 
-def run():
-    lista_de_artistas = buscar_lista_artistas()
-    mes_foco = "Setembro 2025"
+# (Certifique-se de que 'import sys' está no topo)
+# (Certifique-se de que 'buscar_lista_artistas()' foi removida)
 
+def run(artista_para_processar_tupla): # <-- MUDANÇA: Recebe a tupla (nome_arquivo, nome_display)
+    # O loop 'for' foi REMOVIDO
+    
+    # Desempacota a tupla recebida
+    artista_arquivo = artista_para_processar_tupla[0] 
+    artista_display = artista_para_processar_tupla[1]
 
-    for artista in lista_de_artistas:
-        artist = artista[1]
-        artista = artista[0]
+    mes_foco = "Setembro 2025" # Mantenha ou ajuste conforme necessário
 
-        # [NOVO] Defina o caminho para o seu arquivo .docx aqui
-        caminho_docx = f'/Users/emotionstudios/Library/CloudStorage/GoogleDrive-daniel.eller@1bigmedia.group/My Drive/1 - IMPORTANTES/Scripts/Cluster_WorkFlow/dados_full/{artista}/exports/analise_narrativa_{artista}.txt'
-        graficos_path = f'/Users/emotionstudios/Library/CloudStorage/GoogleDrive-daniel.eller@1bigmedia.group/My Drive/1 - IMPORTANTES/Scripts/Cluster_WorkFlow/dados_full/{artista}/exports/'
+    # Caminho para o arquivo .txt (verifique se este caminho ainda é o correto)
+    caminho_docx = rf'C:\Users\samuj\OneDrive\Área de Trabalho\1bmg\projeto_cluster_API\relatorios_api/{artista_arquivo}/exports/analise_narrativa_{artista_arquivo}.txt'
+    # Caminho para os gráficos (verifique se este caminho ainda é o correto)
+    graficos_path = rf'C:\Users\samuj\OneDrive\Área de Trabalho\1bmg\projeto_cluster_API\relatorios_api/{artista_arquivo}/exports/' # Ajuste se necessário
+
+    print(f"Gerando apresentação 'cluster' para: {artista_display}")
+    
+    try:
+        # A lógica interna da sua função run original vai aqui,
+        # usando 'artista_arquivo' para caminhos e 'artista_display' para textos na apresentação
         textos_extraidos = extrair_conteudo_markdown(caminho_docx)
+        if not textos_extraidos:
+             print(f"AVISO: Não foi possível extrair textos do markdown para {artista_arquivo}. Verifique o arquivo: {caminho_docx}")
+             # Decide se quer continuar sem os textos ou parar
+             # return # Descomente para parar se os textos forem essenciais
+             textos_extraidos = ["Texto não encontrado"] * 5 # Ou use placeholders
 
-        print('Gerando: '+ artist)
-        
-        # Linha CORRETA
-        create_apresentation(artista, artist, mes_foco, textos_extraidos, graficos_path)
+        create_apresentation(artista_arquivo, artista_display, mes_foco, textos_extraidos, graficos_path)
+        print(f"-> Sucesso: Apresentação 'cluster' para {artista_display} gerada.")
 
-        print('Done')
+    except FileNotFoundError as e:
+        print(f"ERRO: Arquivo não encontrado durante a geração da apresentação para {artista_arquivo}. Detalhes: {e}")
+    except Exception as e:
+        print(f"ERRO inesperado ao gerar apresentação 'cluster' para {artista_arquivo}: {e}")
+
 
 if __name__ == "__main__":
-    run()
+    if len(sys.argv) < 2:
+        print("Erro: Nenhum artista fornecido (formato esperado: nome_arquivo). Este script deve ser chamado pelo main.py")
+        sys.exit(1) # Sai com erro
+    
+    artista_arquivo_arg = sys.argv[1]
 
+    try:
+        with open('comparacoes.json', encoding='latin-1') as json_file: # Use o encoding correto
+            comparacoes = json.load(json_file)
+        artista_display_arg = comparacoes.get(artista_arquivo_arg, artista_arquivo_arg) # Usa o nome do arquivo se não achar correspondência
+    except FileNotFoundError:
+        print("Aviso: 'comparacoes.json' não encontrado. Usando nome do arquivo como nome de display.")
+        artista_display_arg = artista_arquivo_arg
+    except Exception as e:
+        print(f"Erro ao ler 'comparacoes.json': {e}. Usando nome do arquivo como nome de display.")
+        artista_display_arg = artista_arquivo_arg
 
-
-
-
-
-
-
-
-
-
+    # Cria a tupla esperada pela função run
+    artista_tupla_arg = (artista_arquivo_arg, artista_display_arg)
+    
+    # Executa a função run APENAS para esse artista
+    run(artista_tupla_arg)
