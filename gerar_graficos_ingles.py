@@ -1,4 +1,5 @@
 import os
+import sys
 import glob
 import openpyxl
 import matplotlib as mpl
@@ -72,11 +73,6 @@ METRIC_ICON_MAP = {
     "RPM (USD)": "$",
     "Estimated revenue (USD)": "💰"
 }
-
-
-def buscar_lista_artistas():
-    with open('exports.txt', encoding='latin-1') as f: 
-        return [line.rstrip() for line in f.readlines()]
 
 
 def custom_format(num):
@@ -1501,40 +1497,48 @@ def gerar_tabela_inscritos_avancada(artista):
         print(f" Error in generate_advanced_subscriber_table for '{artista}': {e}") # Translated error message
 
 
-def run():
-    lista_de_artistas = buscar_lista_artistas()
-    for artista in lista_de_artistas:
-        print(f"\n--- Generating reports for: {artista} ---")
-        os.makedirs(f'dados_full/{artista}/plots', exist_ok=True)
-        file_path_4_1 = f'exports_tabelas/tabela_4.1_{artista}.xlsx'
+def run(artista):     
+    print(f"\n--- Generating reports for: {artista} ---")
+    os.makedirs(f'dados_full/{artista}/plots', exist_ok=True)
+    file_path_4_1 = f'exports_tabelas/tabela_4.1_{artista}.xlsx'
+    
+    gerar_tabela_metricas(artista, 'VOD', 'videos.csv', 1); gerar_tabela_metricas(artista, 'Lives', 'lives.csv', 2); gerar_tabela_metricas(artista, 'Shorts', 'shorts.csv', 3)
+    gerar_tabela_metricas_avancada(artista, 'VOD', 'videos.csv', 1)
+    gerar_tabela_metricas_avancada(artista, 'Lives', 'lives.csv', 2)
+    gerar_tabela_metricas_avancada(artista, 'Shorts', 'shorts.csv', 3)
+    gerar_cards_detalhados(artista, file_path_4_1)
+    publicated_table(artista, file_path_4_1)
+    analyze_initial_updated(artista, file_path_4_1)
+    watch_table(artista, file_path_4_1)
+    monetization_graph(artista, file_path_4_1)
+    revenue_per_type_chart(artista, file_path_4_1)
+    conversion_graph(artista, file_path_4_1)
+    gerar_grafico_qualidade(artista, file_path_4_1, 'vod', 11)
+    gerar_grafico_qualidade(artista, file_path_4_1, 'live', 12)
+    gerar_grafico_qualidade(artista, file_path_4_1, 'shorts', 12.5)
+    try:
+        semestralOrigem, total = dfOrigem(f'dados_full/{artista}/origem_lives', f'dados_full/{artista}/origem_vods')
+        traficSorce_graph(semestralOrigem, semestralOrigem['Mês'], total, 'Views by Traffic Source', plt.cm.get_cmap('tab20').colors, artista)
+    except Exception as e: print(f"❌ Error generating Traffic Source chart for '{artista}': {e}")
+    subscription_growth(artista, file_path_4_1)
+    gerar_grafico_engajamento_tipo(artista, file_path_4_1, 'vod', 15)
+    gerar_grafico_engajamento_tipo(artista, file_path_4_1, 'live', 16)
+    gerar_grafico_engajamento_tipo(artista, file_path_4_1, 'shorts', 16.5)
+    generate_comunity_chart(artista)
+    gerar_tabela_inscritos_avancada(artista)
+    gerar_grafico_views(artista, file_path_4_1)
 
-        gerar_tabela_metricas(artista, 'VOD', 'videos.csv', 1); gerar_tabela_metricas(artista, 'Lives', 'lives.csv', 2); gerar_tabela_metricas(artista, 'Shorts', 'shorts.csv', 3)
-        gerar_tabela_metricas_avancada(artista, 'VOD', 'videos.csv', 1)
-        gerar_tabela_metricas_avancada(artista, 'Lives', 'lives.csv', 2)
-        gerar_tabela_metricas_avancada(artista, 'Shorts', 'shorts.csv', 3)
-        gerar_cards_detalhados(artista, file_path_4_1)
-        publicated_table(artista, file_path_4_1)
-        analyze_initial_updated(artista, file_path_4_1)
-        watch_table(artista, file_path_4_1)
-        monetization_graph(artista, file_path_4_1)
-        revenue_per_type_chart(artista, file_path_4_1)
-        conversion_graph(artista, file_path_4_1)
-        gerar_grafico_qualidade(artista, file_path_4_1, 'vod', 11)
-        gerar_grafico_qualidade(artista, file_path_4_1, 'live', 12)
-        gerar_grafico_qualidade(artista, file_path_4_1, 'shorts', 12.5)
-        try:
-            semestralOrigem, total = dfOrigem(f'dados_full/{artista}/origem_lives', f'dados_full/{artista}/origem_vods')
-            traficSorce_graph(semestralOrigem, semestralOrigem['Mês'], total, 'Views by Traffic Source', plt.cm.get_cmap('tab20').colors, artista)
-        except Exception as e: print(f"❌ Error generating Traffic Source chart for '{artista}': {e}")
-        subscription_growth(artista, file_path_4_1)
-        gerar_grafico_engajamento_tipo(artista, file_path_4_1, 'vod', 15)
-        gerar_grafico_engajamento_tipo(artista, file_path_4_1, 'live', 16)
-        gerar_grafico_engajamento_tipo(artista, file_path_4_1, 'shorts', 16.5)
-        generate_comunity_chart(artista)
-        gerar_tabela_inscritos_avancada(artista)
-        gerar_grafico_views(artista, file_path_4_1)
-        print(f" Reports for '{artista}' completed.")
+    # Corrigindo o print com emoji
+    print(f"OK - Reports for '{artista}' completed.")
 
 
 if __name__ == "__main__":
-    run()
+    # Pega o nome do artista do argumento passado pelo main.py
+    if len(sys.argv) < 2:
+        print("Error: No artist provided. This script must be called by main.py")
+        sys.exit(1) # Sai com erro
+
+    artista_argumento = sys.argv[1]
+
+    # Executa a função run APENAS para esse artista
+    run(artista_argumento)
