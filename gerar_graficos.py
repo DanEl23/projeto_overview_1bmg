@@ -1448,11 +1448,13 @@ def gerar_tabela_inscritos_avancada(artista):
 
 
 def run(artista):
-    # O loop 'for' foi removido e o 'artista' agora vem como argumento da função
-    print(f"\n--- Gerando gráficos para: {artista} ---")
+    # O loop 'for' e a chamada 'buscar_lista_artistas' foram REMOVIDOS.
+    # 'artista' agora é recebido como argumento.
+    print(f"\n--- Generating reports for: {artista} ---")
     os.makedirs(f'dados_full/{artista}/plots', exist_ok=True)
     file_path_4_1 = f'exports_tabelas/tabela_4.1_{artista}.xlsx'
-    
+
+    gerar_tabela_metricas(artista, 'VOD', 'videos.csv', 1); gerar_tabela_metricas(artista, 'Lives', 'lives.csv', 2); gerar_tabela_metricas(artista, 'Shorts', 'shorts.csv', 3)
     gerar_tabela_metricas_avancada(artista, 'VOD', 'videos.csv', 1)
     gerar_tabela_metricas_avancada(artista, 'Lives', 'lives.csv', 2)
     gerar_tabela_metricas_avancada(artista, 'Shorts', 'shorts.csv', 3)
@@ -1468,24 +1470,24 @@ def run(artista):
     gerar_grafico_qualidade(artista, file_path_4_1, 'shorts', 12.5)
     try:
         semestralOrigem, total = dfOrigem(f'dados_full/{artista}/origem_lives', f'dados_full/{artista}/origem_vods')
-        traficSorce_graph(semestralOrigem, semestralOrigem['Mês'], total, 'Visualizações por Origem de Tráfego', plt.cm.get_cmap('tab20').colors, artista)
-    except Exception as e: print(f"Erro ao gerar gráfico de Origem de Tráfego para '{artista}': {e}")
+        traficSorce_graph(semestralOrigem, semestralOrigem['Mês'], total, 'Views by Traffic Source', plt.cm.get_cmap('tab20').colors, artista)
+    except Exception as e: print(f"❌ Error generating Traffic Source chart for '{artista}': {e}")
     subscription_growth(artista, file_path_4_1)
-    gerar_grafico_engajamento_tipo(artista, file_path_4_1, 'vod', 15) 
+    gerar_grafico_engajamento_tipo(artista, file_path_4_1, 'vod', 15)
     gerar_grafico_engajamento_tipo(artista, file_path_4_1, 'live', 16)
     gerar_grafico_engajamento_tipo(artista, file_path_4_1, 'shorts', 16.5)
-    gerar_grafico_comunidade(artista)
+    generate_comunity_chart(artista)
     gerar_tabela_inscritos_avancada(artista)
     gerar_grafico_views(artista, file_path_4_1)
     
-    # Corrigindo o print que deu erro de encoding
-    print(f"OK - Relatórios para '{artista}' concluídos.")
+    # Corrigindo o print que daria erro de encoding
+    print(f"OK - Reports for '{artista}' completed.")
 
 
 if __name__ == "__main__":
     # Pega o nome do artista do argumento passado pelo main.py
     if len(sys.argv) < 2:
-        print("Erro: Nenhum artista fornecido. Este script deve ser chamado pelo main.py")
+        print("Error: No artist provided. This script must be called by main.py")
         sys.exit(1) # Sai com erro
     
     artista_argumento = sys.argv[1]
