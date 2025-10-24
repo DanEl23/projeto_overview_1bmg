@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import pandas as pd
 from pptx import Presentation
@@ -10,32 +11,6 @@ import re
 import docx
 
     
-
-def buscar_lista_artistas():
-    # Carrega o dicionário de comparações do arquivo JSON
-    with open('comparacoes.json', encoding='latin-1') as json_file:
-        comparacoes = json.load(json_file)
-
-    # Acesso a exports.txt para buscar o nome dos artistas
-    with open('exports.txt', encoding='latin-1') as f:
-        lines = f.readlines()
-    
-    # Limpa espaços em branco no final de cada linha
-    lines = [i.rstrip() for i in lines]
-
-    # Preparar a lista para armazenar os pares de artistas
-    artistas_e_correspondentes = []
-
-    # Buscar correspondência para cada artista
-    for artista in lines:
-        if artista in comparacoes:
-            artistas_e_correspondentes.append((artista, comparacoes[artista]))
-        else:
-            print(f'Sem correspondência para: {artista}')
-
-    return artistas_e_correspondentes
-
-
 def create_apresentation(artista, artist, mes_foco):
     prs = Presentation()
 
@@ -1075,25 +1050,78 @@ def create_apresentation(artista, artist, mes_foco):
     prs.save(f'export_teste/Report Mensal {mes_foco} {artist}.pptx')
 
 
-def run():
-    lista_de_artistas = buscar_lista_artistas()
-    mes_foco = "August 2025"
+Perfeito! Vamos corrigir o apresentacao_report_ingles.py seguindo o mesmo padrão.
 
+Com base no trecho que você forneceu, aqui estão as alterações necessárias:
 
-    for artista in lista_de_artistas:
-        artist = artista[1]
-        artista = artista[0]
+Adicione import sys e import json no início do arquivo apresentacao_report_ingles.py.
 
-        print('Gerando: '+ artist)
-        create_apresentation(artista, artist, mes_foco)
+Remova a função buscar_lista_artistas() (você precisará localizá-la e apagá-la, assim como fez nos outros scripts).
 
-        print('Done')
+Substitua a função run() e o bloco if __name__ == "__main__": existentes pelo código corrigido abaixo:
+
+Python
+
+import sys
+import json # Necessário para ler comparacoes.json
+# ... (outros imports do seu script, como pptx, os, etc.)
+
+# ... (função create_apresentation e outras funções auxiliares, provavelmente com nomes/textos em inglês) ...
+
+def run(artista_tupla):
+    """
+    Executes the generation of the 'report' presentation (English) for a single artist.
+    Receives a tuple (artist_file_name, artist_display_name).
+    """
+    # Desempacota a tupla recebida
+    artista_arquivo = artista_tupla[0]
+    artista_display = artista_tupla[1] # 'artist' no seu código original
+
+    # Define o mês ou outras variáveis
+    mes_foco = "August 2025" # Mantenha ou ajuste (já estava em inglês)
+
+    print(f'Generating report presentation (English) for: {artista_display}')
+
+    try:
+        # A chamada para a função principal que cria a apresentação (em inglês)
+        # Use as variáveis desempacotadas corretamente
+        create_apresentation(artista_arquivo, artista_display, mes_foco) # Certifique-se que esta função gere o conteúdo em inglês
+
+        print(f'-> Success: Report presentation (English) for {artista_display} completed.') # Mensagem de sucesso
+
+    except FileNotFoundError as e:
+        print(f"ERROR: File not found while generating report presentation (English) for {artista_arquivo}. Details: {e}")
+    except Exception as e:
+        print(f"ERROR: Unexpected error generating report presentation (English) for {artista_arquivo}: {e}")
+
 
 if __name__ == "__main__":
-    run()
+    # Verifica se o main.py passou o nome do artista (nome do arquivo)
+    if len(sys.argv) < 2:
+        print("Error: No artist (file_name) provided. Should be called via main.py.")
+        sys.exit(1)
 
+    artista_arquivo_arg = sys.argv[1]
 
+    # Tenta encontrar o nome de display correspondente em comparacoes.json
+    try:
+        # Garanta que o encoding esteja correto (latin-1 ou utf-8)
+        with open('comparacoes.json', encoding='latin-1') as json_file:
+            comparacoes = json.load(json_file)
+        # Usa o nome do arquivo como fallback se não encontrar
+        artista_display_arg = comparacoes.get(artista_arquivo_arg, artista_arquivo_arg)
+    except FileNotFoundError:
+        print("Warning: 'comparacoes.json' not found. Using file name as display name.")
+        artista_display_arg = artista_arquivo_arg
+    except Exception as e:
+        print(f"Error reading 'comparacoes.json': {e}. Using file name as display name.")
+        artista_display_arg = artista_arquivo_arg
 
+    # Cria a tupla (nome_arquivo, nome_display) que a função run espera
+    artista_tupla_arg = (artista_arquivo_arg, artista_display_arg)
+
+    # Executa a função run APENAS para o artista fornecido
+    run(artista_tupla_arg)
 
 
 
