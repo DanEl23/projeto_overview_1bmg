@@ -1,6 +1,7 @@
-import pandas as pd
-import numpy as np
 import os
+import sys
+import numpy as np
+import pandas as pd
 from typing import List
 
 # Obtém o caminho do diretório onde o script está sendo executado
@@ -488,32 +489,30 @@ def gerar_relatorio_para_artista(artista: str):
         tabela_desvio_media.to_excel(writer, sheet_name='Desvio', index=True)
         tabela_desvio_anterior.to_excel(writer, sheet_name='Mês Anterior', index=True)
 
-    print(f"Relatório para {artista} salvo com sucesso ✅")
-
-
-def buscar_lista_artistas():
-    caminho_exports = os.path.join(path, 'exports.txt')
-    if not os.path.exists(caminho_exports):
-        print(f"AVISO: Arquivo 'exports.txt' não encontrado em {path}. Usando lista padrão ['timesBrasil'].")
-        return ['timesBrasil']
-    with open(caminho_exports) as f:
-        lines = f.readlines()
-    return [i.strip() for i in lines if i.strip()]
+    print(f"Relatório para {artista} salvo com sucesso")
 
 
 def run():
-    lista_de_artistas = buscar_lista_artistas()
+    print(f"Gerando report para: {artista}")
     
-    for artista_selecionado in lista_de_artistas:
-        try:
-            gerar_relatorio_para_artista(artista_selecionado)
-        except FileNotFoundError as e:
-            print(f"\nERRO: Não foi possível processar '{artista_selecionado}'. Arquivo não encontrado: {e.filename}\n")
-        except Exception as e:
-            print(f"\nERRO: Ocorreu um problema inesperado ao processar '{artista_selecionado}': {e}\n")
-            import traceback
-            traceback.print_exc()
+    try:
+        gerar_relatorio_para_artista(artista_selecionado)
+    except FileNotFoundError as e:
+        print(f"\nERRO: Não foi possível processar '{artista_selecionado}'. Arquivo não encontrado: {e.filename}\n")
+    except Exception as e:
+        print(f"\nERRO: Ocorreu um problema inesperado ao processar '{artista_selecionado}': {e}\n")
+        import traceback
+        traceback.print_exc()
+    print(f"Report para {artista} finalizado.")
 
 
-if __name__ == '__main__':
-    run()
+if __name__ == "__main__":
+    # Pega o nome do artista do argumento passado pelo main.py
+    if len(sys.argv) < 2:
+        print("Erro: Nenhum artista fornecido. Este script deve ser chamado pelo main.py")
+        sys.exit(1) # Sai com erro
+    
+    artista_argumento = sys.argv[1]
+    
+    # Executa a função run APENAS para esse artista
+    run(artista_argumento)
