@@ -1,4 +1,5 @@
 import os
+import sys
 import glob
 import pandas as pd
 import numpy as np
@@ -19,15 +20,6 @@ def salvar_arquivo_csv_novas_colunas(colunas_a_incluir: dict, colunas_padrao: li
         df[coluna] = None
     df = df[colunas_padrao]
     df.to_csv(arquivo, index=False)
-
-
-def buscar_lista_artistas():
-    # Acesso exports.txt para buscar o nome dos artistas
-    lines = ''
-    with open(path+'/exports.txt') as f:
-        lines = f.readlines()
-    lines = [i.rstrip() for i in lines]
-    return lines
 
 
 def ajustar_padrao_colunas(artista):
@@ -224,18 +216,24 @@ def update_traffic_source(artista):
             arq.to_csv(arquivo, index=False)
 
 
-def run():
-    lista_de_artistas = buscar_lista_artistas()
-
-    for artista in lista_de_artistas:
-        print(f'Tratando: {artista}')
-        ajustar_padrao_colunas(artista)
-        completar_data(artista)
-        process_post_data(artista)
-        corrigir_csv_por_prefixo(str(artista))
-        preencher_colunas_vazias(artista)
-        update_traffic_source(artista)
+def run(artista_para_processar):
+    # O loop 'for' foi removido
+    print(f'Tratando: {artista_para_processar}')
+    ajustar_padrao_colunas(artista_para_processar)
+    completar_data(artista_para_processar)
+    process_post_data(artista_para_processar)
+    corrigir_csv_por_prefixo(str(artista_para_processar))
+    preencher_colunas_vazias(artista_para_processar)
+    update_traffic_source(artista_para_processar)
 
 if __name__ == '__main__':
-    run()
-
+    # Verifica se o main.py passou o nome do artista
+    if len(sys.argv) < 2:
+        print("Erro: Nenhum artista fornecido. Este script deve ser chamado pelo main.py")
+        sys.exit(1) # Sai com erro
+    
+    # Pega o nome do artista do argumento
+    artista_argumento = sys.argv[1]
+    
+    # Executa a função run APENAS para esse artista
+    run(artista_argumento)
