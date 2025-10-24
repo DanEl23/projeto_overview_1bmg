@@ -1448,7 +1448,7 @@ def gerar_tabela_inscritos_avancada(artista):
          plt.close(fig)
 
      except Exception as e:
-         print(f"❌ Erro em gerar_tabela_inscritos_avancada para '{artista}': {e}")
+         print(f"Erro em gerar_tabela_inscritos_avancada para '{artista}': {e}")
 
 
 def run():
@@ -1482,7 +1482,7 @@ def run():
         gerar_grafico_comunidade(artista)
         gerar_tabela_inscritos_avancada(artista)
         gerar_grafico_views(artista, file_path_4_1)
-        print(f"✅ Relatórios para '{artista}' concluídos.")
+        print(f"OK - Relatórios para '{artista}' concluídos.")
 
 
 if __name__ == "__main__":
