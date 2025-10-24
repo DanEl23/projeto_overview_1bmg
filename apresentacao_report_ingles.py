@@ -13,11 +13,11 @@ import docx
 
 def buscar_lista_artistas():
     # Carrega o dicionário de comparações do arquivo JSON
-    with open('comparacoes.json') as json_file:
+    with open('comparacoes.json', encoding='latin-1') as json_file:
         comparacoes = json.load(json_file)
-    
+
     # Acesso a exports.txt para buscar o nome dos artistas
-    with open('exports.txt') as f:
+    with open('exports.txt', encoding='latin-1') as f:
         lines = f.readlines()
     
     # Limpa espaços em branco no final de cada linha
