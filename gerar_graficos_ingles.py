@@ -1498,7 +1498,7 @@ def gerar_tabela_inscritos_avancada(artista):
         plt.close(fig)
 
     except Exception as e:
-        print(f"❌ Error in generate_advanced_subscriber_table for '{artista}': {e}") # Translated error message
+        print(f" Error in generate_advanced_subscriber_table for '{artista}': {e}") # Translated error message
 
 
 def run():
@@ -1533,7 +1533,7 @@ def run():
         generate_comunity_chart(artista)
         gerar_tabela_inscritos_avancada(artista)
         gerar_grafico_views(artista, file_path_4_1)
-        print(f"✅ Reports for '{artista}' completed.")
+        print(f" Reports for '{artista}' completed.")
 
 
 if __name__ == "__main__":
