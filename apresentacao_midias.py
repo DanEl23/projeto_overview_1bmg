@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import pandas as pd
 from pptx import Presentation
@@ -9,31 +10,6 @@ from pptx.enum.shapes import MSO_CONNECTOR
 import re  
 import docx
 
-
-
-def buscar_lista_artistas():
-    # Carrega o dicionário de comparações do arquivo JSON
-    with open('comparacoes.json', encoding='latin-1') as json_file:
-        comparacoes = json.load(json_file)
-
-    # Acesso a exports.txt para buscar o nome dos artistas
-    with open('exports.txt', encoding='latin-1') as f:
-        lines = f.readlines()
-    
-    # Limpa espaços em branco no final de cada linha
-    lines = [i.rstrip() for i in lines]
-
-    # Preparar a lista para armazenar os pares de artistas
-    artistas_e_correspondentes = []
-
-    # Buscar correspondência para cada artista
-    for artista in lines:
-        if artista in comparacoes:
-            artistas_e_correspondentes.append((artista, comparacoes[artista]))
-        else:
-            print(f'Sem correspondência para: {artista}')
-
-    return artistas_e_correspondentes
 
 
 def create_apresentation(artista, artist, mes_foco):
@@ -1152,23 +1128,60 @@ def create_apresentation(artista, artist, mes_foco):
     prs.save(f'export_teste/Overview Mensal {mes_foco} {artist}.pptx')
 
 
-def run():
-    lista_de_artistas = buscar_lista_artistas()
-    mes_foco = "Setembro 2025"
+def run(artista_tupla):
+    """
+    Executa a geração da apresentação 'midias' para um único artista.
+    Recebe uma tupla (nome_arquivo_artista, nome_display_artista).
+    """
+    # Desempacota a tupla recebida
+    artista_arquivo = artista_tupla[0]
+    artista_display = artista_tupla[1] # 'artist' no seu código original
 
+    # Define o mês ou outras variáveis
+    mes_foco = "Setembro 2025" # Mantenha ou ajuste
 
-    for artista in lista_de_artistas:
-        artist = artista[1]
-        artista = artista[0]
+    print(f'Gerando apresentação midias para: {artista_display}')
+    
+    try:
+        # A chamada para a função principal que cria a apresentação
+        # Use as variáveis desempacotadas corretamente
+        create_apresentation(artista_arquivo, artista_display, mes_foco) 
+        
+        print(f'-> Sucesso: Apresentação midias para {artista_display} concluída.') # Mensagem de sucesso mais clara
 
-        print('Gerando: '+ artist)
-        create_apresentation(artista, artist, mes_foco)
+    except FileNotFoundError as e:
+        print(f"ERRO: Arquivo não encontrado ao gerar apresentação midias para {artista_arquivo}. Detalhes: {e}")
+    except Exception as e:
+        print(f"ERRO inesperado ao gerar apresentação midias para {artista_arquivo}: {e}")
 
-        print('Done')
 
 if __name__ == "__main__":
-    run()
+    # Verifica se o main.py passou o nome do artista (nome do arquivo)
+    if len(sys.argv) < 2:
+        print("Erro: Nenhum artista (nome_arquivo) fornecido. Chamar via main.py.")
+        sys.exit(1) 
+    
+    artista_arquivo_arg = sys.argv[1]
 
+    # Tenta encontrar o nome de display correspondente em comparacoes.json
+    try:
+        # Garanta que o encoding esteja correto
+        with open('comparacoes.json', encoding='latin-1') as json_file: 
+            comparacoes = json.load(json_file)
+        # Usa o nome do arquivo como fallback se não encontrar
+        artista_display_arg = comparacoes.get(artista_arquivo_arg, artista_arquivo_arg) 
+    except FileNotFoundError:
+        print("Aviso: 'comparacoes.json' não encontrado. Usando nome do arquivo como display.")
+        artista_display_arg = artista_arquivo_arg
+    except Exception as e:
+        print(f"Erro ao ler 'comparacoes.json': {e}. Usando nome do arquivo como display.")
+        artista_display_arg = artista_arquivo_arg
+
+    # Cria a tupla (nome_arquivo, nome_display) que a função run espera
+    artista_tupla_arg = (artista_arquivo_arg, artista_display_arg)
+    
+    # Executa a função run APENAS para o artista fornecido
+    run(artista_tupla_arg)
 
 
 
