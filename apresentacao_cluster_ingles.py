@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import pandas as pd
 from pptx import Presentation
@@ -57,31 +58,6 @@ def extrair_conteudo_markdown(caminho_do_arquivo):
     textos_extraidos = [texto.strip() for titulo, texto in matches]
     
     return textos_extraidos
-    
-
-def buscar_lista_artistas():
-    # Carrega o dicionário de comparações do arquivo JSON
-    with open('comparacoes.json', encoding='latin-1') as json_file:
-        comparacoes = json.load(json_file)
-
-    # Acesso a exports.txt para buscar o nome dos artistas
-    with open('exports.txt', encoding='latin-1') as f:
-        lines = f.readlines()
-    
-    # Limpa espaços em branco no final de cada linha
-    lines = [i.rstrip() for i in lines]
-
-    # Preparar a lista para armazenar os pares de artistas
-    artistas_e_correspondentes = []
-
-    # Buscar correspondência para cada artista
-    for artista in lines:
-        if artista in comparacoes:
-            artistas_e_correspondentes.append((artista, comparacoes[artista]))
-        else:
-            print(f'Sem correspondência para: {artista}')
-
-    return artistas_e_correspondentes
 
 
 def create_apresentation(artista, artist, mes_foco, textos_extraidos, graficos_path):
@@ -1378,41 +1354,70 @@ def create_apresentation(artista, artist, mes_foco, textos_extraidos, graficos_p
     prs.save(f'export_teste/Overview Mensal {mes_foco} {artist}.pptx')
 
 
-def run():
-    lista_de_artistas = buscar_lista_artistas()
-    mes_foco = "September 2025"
+# (Certifique-se de que 'import sys' está no topo)
+# (Certifique-se de que 'buscar_lista_artistas()' foi removida)
 
+def run(artista_para_processar_tupla): # <-- MUDANÇA: Recebe a tupla
+    # O loop 'for' foi REMOVIDO
+    
+    # Desempacota a tupla
+    artista_arquivo = artista_para_processar_tupla[0] 
+    artista_display = artista_para_processar_tupla[1]
 
-    for artista in lista_de_artistas:
-        artist = artista[1]
-        artista = artista[0]
+    # Ajuste o mês ou torne-o dinâmico se necessário
+    mes_foco = "September 2025" # Exemplo em inglês
 
-        # [NOVO] Defina o caminho para o seu arquivo .docx aqui
-        caminho_docx = f'/Users/emotionstudios/Library/CloudStorage/GoogleDrive-daniel.eller@1bigmedia.group/My Drive/1 - IMPORTANTES/Scripts/Cluster_WorkFlow/dados_full/{artista}/exports/analise_narrativa_{artista}.txt'
-        graficos_path = f'/Users/emotionstudios/Library/CloudStorage/GoogleDrive-daniel.eller@1bigmedia.group/My Drive/1 - IMPORTANTES/Scripts/Cluster_WorkFlow/dados_full/{artista}/exports/'
-        textos_extraidos = extrair_conteudo_markdown(caminho_docx)
+    # === Verifique e ajuste estes caminhos ===
+    # Caminho para o arquivo de texto (pode ser o mesmo ou uma versão em inglês)
+    caminho_texto = rf'C:\Users\samuj\OneDrive\Área de Trabalho\1bmg\projeto_cluster_API\relatorios_api/{artista_arquivo}/exports/analise_narrativa_{artista_arquivo}_en.txt' # Exemplo com sufixo _en
+    # Caminho para os gráficos (pode ser o mesmo ou uma pasta diferente)
+    graficos_path = rf'C:\Users\samuj\OneDrive\Área de Trabalho\1bmg\projeto_cluster_API\relatorios_api/{artista_arquivo}/exports/' # Ajuste se necessário
+    # === Fim da verificação de caminhos ===
+
+    print(f"Generating 'cluster' presentation (English) for: {artista_display}")
+    
+    try:
+        # Tenta extrair o conteúdo do markdown (ajuste a função se necessário)
+        # Assumindo que a função extrair_conteudo_markdown funciona para inglês também
+        textos_extraidos = extrair_conteudo_markdown(caminho_texto) 
+        if not textos_extraidos:
+             print(f"WARNING: Could not extract text from markdown for {artista_arquivo}. Check file: {caminho_texto}")
+             # Use placeholders or decide to stop
+             textos_extraidos = ["Text not found"] * 5 
+
+        # Chama a função principal para criar a apresentação
+        # Assumindo que existe uma 'create_presentation_ingles' ou que a original serve
+        create_presentation_ingles(artista_arquivo, artista_display, mes_foco, textos_extraidos, graficos_path) # Ajuste o nome da função se necessário
         
-        # [NOVO] Verifica se a leitura do .docx deu erro
-        if 'erro' in textos_extraidos:
-            print(textos_extraidos['erro'])
-            return # Para a execução se o arquivo não for encontrado
+        print(f"-> Success: 'cluster' presentation (English) for {artista_display} generated.")
 
-        print('Gerando: '+ artist)
-        # Linha CORRETA
-        create_apresentation(artista, artist, mes_foco, textos_extraidos, graficos_path)
+    except FileNotFoundError as e:
+        print(f"ERROR: File not found while generating presentation for {artista_arquivo}. Details: {e}")
+    except Exception as e:
+        print(f"ERROR: Unexpected error generating 'cluster' presentation (English) for {artista_arquivo}: {e}")
 
-        print('Done')
 
 if __name__ == "__main__":
-    run()
+    
+    if len(sys.argv) < 2:
+        print("Error: No artist provided (expected format: file_name). This script must be called by main.py")
+        sys.exit(1) 
+    
+    artista_arquivo_arg = sys.argv[1]
+    try:
+        with open('comparacoes.json', encoding='latin-1') as json_file: # Use o encoding correto
+            comparacoes = json.load(json_file)
+        # Busca o nome de display; se não encontrar, usa o nome do arquivo
+        artista_display_arg = comparacoes.get(artista_arquivo_arg, artista_arquivo_arg) 
+    except FileNotFoundError:
+        print("Warning: 'comparacoes.json' not found. Using file name as display name.")
+        artista_display_arg = artista_arquivo_arg
+    except Exception as e:
+        print(f"Error reading 'comparacoes.json': {e}. Using file name as display name.")
+        artista_display_arg = artista_arquivo_arg
 
-
-
-
-
-
-
-
-
-
-
+    # Cria a tupla esperada pela função run
+    artista_tupla_arg = (artista_arquivo_arg, artista_display_arg)
+    
+    # Executa a função run APENAS para esse artista
+    run(artista_tupla_arg)
