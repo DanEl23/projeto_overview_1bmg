@@ -344,10 +344,10 @@ def gerar_relatorio_para_artista(artista: str):
     print(f"Relatório para {artista} salvo com sucesso")
 
 
-def run():
+def run(artista):
     print(f"Gerando report CA para: {artista}")
     try:
-        gerar_relatorio_para_artista(artista_selecionado)
+        gerar_relatorio_para_artista(artista)
     except FileNotFoundError as e:
         print(f"\nERRO: Arquivo não encontrado ao processar '{artista_selecionado}': {e.filename}\n")
     except Exception as e:
