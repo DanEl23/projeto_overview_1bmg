@@ -1502,7 +1502,6 @@ def run(artista):
     os.makedirs(f'dados_full/{artista}/plots', exist_ok=True)
     file_path_4_1 = f'exports_tabelas/tabela_4.1_{artista}.xlsx'
     
-    gerar_tabela_metricas(artista, 'VOD', 'videos.csv', 1); gerar_tabela_metricas(artista, 'Lives', 'lives.csv', 2); gerar_tabela_metricas(artista, 'Shorts', 'shorts.csv', 3)
     gerar_tabela_metricas_avancada(artista, 'VOD', 'videos.csv', 1)
     gerar_tabela_metricas_avancada(artista, 'Lives', 'lives.csv', 2)
     gerar_tabela_metricas_avancada(artista, 'Shorts', 'shorts.csv', 3)
